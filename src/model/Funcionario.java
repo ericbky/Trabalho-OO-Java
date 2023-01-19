@@ -1,5 +1,4 @@
 package model;
-import java.util.*;
 
 public class Funcionario extends Usuario {
 
