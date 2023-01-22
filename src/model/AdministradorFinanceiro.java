@@ -11,6 +11,6 @@ public class AdministradorFinanceiro extends Funcionario{
 
     }
     public void pagarConta(){
-
+        sysout;
     }
 }
