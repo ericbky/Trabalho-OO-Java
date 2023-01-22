@@ -1,16 +1,22 @@
 package model;
+
+import Sistema.BancoDados;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class Cliente extends Usuario {
+public class Cliente {
 
+    private final String email;
+    private String telefone;
     private String cnpj;
-    private String razaoSocial;
-    private String inscricaoEstadual;
-    private Date inicioContrato;
-    private Date fimContrato;
+    private String inicioContrato;
+    private  String razaoSocial;
+    private String fimContrato;
 
-    public Cliente(String email, String senha, String telefone, int opcaoUsuario) {
-        super(email, senha, telefone, opcaoUsuario);
+    public String getEmail() {
+        return email;
     }
 
     public String getCnpj() {
@@ -19,6 +25,21 @@ public class Cliente extends Usuario {
 
     public void setCnpj(String cnpj) {
         this.cnpj = cnpj;
+    }
+    public String getInicioContrato() {
+        return inicioContrato;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public void setInicioContrato(String inicioContrato) {
+        this.inicioContrato = inicioContrato;
     }
 
     public String getRazaoSocial() {
@@ -29,41 +50,31 @@ public class Cliente extends Usuario {
         this.razaoSocial = razaoSocial;
     }
 
-    public String getInscricaoEstadual() {
-        return inscricaoEstadual;
-    }
-
-    public void setInscricaoEstadual(String inscricaoEstadual) {
-        this.inscricaoEstadual = inscricaoEstadual;
-    }
-
-    public Date getInicioContrato() {
-        return inicioContrato;
-    }
-
-    public void setInicioContrato(Date inicioContrato) {
-        this.inicioContrato = inicioContrato;
-    }
-
-    public Date getFimContrato() {
+    public String getFimContrato() {
         return fimContrato;
     }
 
-    public void setFimContrato(Date fimContrato) {
+    public void setFimContrato(String fimContrato) {
         this.fimContrato = fimContrato;
     }
 
-    public Cliente(String email, String senha, String telefone, int opcaoUsuario, String cnpj, String razaoSocial, String inscricaoEstadual, Date inicioContrato, Date fimContrato) {
-        super(email, senha, telefone, opcaoUsuario);
+    public Cliente(String email, String telefone, String cnpj,
+                   String razaoSocial, String inicioContrato, String fimContrato) throws ParseException {
+        this.email = email;
+        this.telefone = telefone;
         this.cnpj = cnpj;
         this.razaoSocial = razaoSocial;
-        this.inscricaoEstadual = inscricaoEstadual;
         this.inicioContrato = inicioContrato;
         this.fimContrato = fimContrato;
     }
 
     public void listarPedidos() {
         //Método de listagem
+    }
+
+    public static void mostrarClientes() throws ParseException {
+        BancoDados bancoDados = new BancoDados();
+        bancoDados.DadosPreCadastradosClientes();
     }
 
 }

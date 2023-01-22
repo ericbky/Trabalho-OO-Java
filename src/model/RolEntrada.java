@@ -3,18 +3,17 @@ import java.util.*;
 
 public class RolEntrada extends Pedido{
 
-    private Date dataLavagem;
+    private String dataLavagem;
 
-    public RolEntrada(String numeroSerie, Date dataPedido, String nomeCliente, int quantidadeRoupa, String status, String tipoLavagem, Cliente cliente, Date dataLavagem) {
-        super(numeroSerie, dataPedido, nomeCliente, quantidadeRoupa, status, tipoLavagem, cliente);
-        this.dataLavagem = dataLavagem;
+    public RolEntrada(String numeroSerie, String dataPedido, int quantidadeRoupa, String status, String tipoLavagem, Cliente cliente) {
+        super(numeroSerie, dataPedido, quantidadeRoupa, status, tipoLavagem, cliente);
     }
 
-    public Date getDataLavagem() {
+    public String getDataLavagem() {
         return dataLavagem;
     }
 
-    public void setDataLavagem(Date dataLavagem) {
+    public void setDataLavagem(String dataLavagem) {
         this.dataLavagem = dataLavagem;
     }
 }

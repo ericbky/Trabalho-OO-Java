@@ -1,11 +1,13 @@
 package model;
-import java.util.*;
+
+import Sistema.*;
+
+import java.text.ParseException;
 
 public class Pedido {
 
     private String numeroSerie;
-    private Date dataPedido;
-    private String nomeCliente;
+    private String dataPedido;
     private int quantidadeRoupa;
     private String status;
     private String tipoLavagem;
@@ -14,10 +16,9 @@ public class Pedido {
     //CONSTRUTOR
 
 
-    public Pedido(String numeroSerie, Date dataPedido, String nomeCliente, int quantidadeRoupa, String status, String tipoLavagem, Cliente cliente) {
+    public Pedido(String numeroSerie, String dataPedido, int quantidadeRoupa, String status, String tipoLavagem, Cliente cliente) {
         this.numeroSerie = numeroSerie;
         this.dataPedido = dataPedido;
-        this.nomeCliente = nomeCliente;
         this.quantidadeRoupa = quantidadeRoupa;
         this.status = status;
         this.tipoLavagem = tipoLavagem;
@@ -33,20 +34,12 @@ public class Pedido {
         this.numeroSerie = numeroSerie;
     }
 
-    public Date getDataPedido() {
+    public String getDataPedido() {
         return dataPedido;
     }
 
-    public void setDataPedido(Date dataPedido) {
+    public void setDataPedido(String dataPedido) {
         this.dataPedido = dataPedido;
-    }
-
-    public String getNomeCliente() {
-        return nomeCliente;
-    }
-
-    public void setNomeCliente(String nomeCliente) {
-        this.nomeCliente = nomeCliente;
     }
 
     public int getQuantidadeRoupa() {
@@ -92,6 +85,14 @@ public class Pedido {
     public float calcularPrecoFinal() {
         float soma = 0;
         return soma;
+    }
+
+    public void listarPedido() throws ParseException {
+        BancoDados bancoDados = new BancoDados();
+
+        System.out.println("\n\nTESTEEEEEEEE");
+
+        bancoDados.DadosPreCadastradosClientes();
     }
 
 }

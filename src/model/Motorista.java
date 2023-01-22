@@ -5,8 +5,8 @@ public class Motorista extends Funcionario{
 
     private String cnh;
 
-    public Motorista(String email, String senha, String telefone, String nome, String cargo, String cnh, int opcaoUsuario) {
-        super(email, senha, telefone, nome, cargo, opcaoUsuario);
+    public Motorista(String email, String senha, String telefone, String nome, String cargo, String cnh) {
+        super(email, senha, telefone, nome, cargo);
         this.cnh = cnh;
     }
 

@@ -1,11 +1,10 @@
 package model;
+import controller.*;
 
 public class Usuario {
     private String email;
     private String senha;
     private String telefone;
-
-    private int opcaoUsuario;
 
     public String getEmail() {
         return email;
@@ -31,24 +30,10 @@ public class Usuario {
         this.telefone = telefone;
     }
 
-    public int getopcaoUsuario() {
-        return opcaoUsuario;
-    }
-
-    public void setOpcaoUsuario(int opcaoUsuario) {
-        this.opcaoUsuario = opcaoUsuario;
-    }
-
     //CONSTRUTOR
-    public Usuario(String email, String senha, String telefone, int opcaoUsuario) {
+    public Usuario(String email, String senha, String telefone) {
         this.email = email;
         this.senha = senha;
         this.telefone = telefone;
-        this.opcaoUsuario = opcaoUsuario;
     }
-
-    public void dadosUsuario(String email, String senha, String telefone, int opcaoUsuario){
-
     }
-
-}
