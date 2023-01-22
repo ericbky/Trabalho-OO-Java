@@ -51,7 +51,7 @@ public class BancoDados {
                     "12.738.250/0001-02", "UnbFCE",  "21/01/2023", "25/01/2023"));
 
         for (Cliente cliente : clientes) {
-            System.out.println("----------||----------\n");
+            System.out.println("-----------||-----------\n");
             System.out.printf("Razão Social: %s\n", cliente.getRazaoSocial());
             System.out.printf("Email: %s\n", cliente.getEmail());
             System.out.printf("Telefone: %s\n", cliente.getTelefone());
@@ -72,7 +72,7 @@ public class BancoDados {
                 "Agendado", "Centrifugação", clientes.get(2)));
 
         for (Pedido pedido : pedidos) {
-            System.out.println("----------||----------\n");
+            System.out.println("-----------||-----------\n");
             System.out.printf("Número de série: %s\n", pedido.getNumeroSerie());
             System.out.printf("Data do pedido: %s\n\n", pedido.getDataPedido());
 
