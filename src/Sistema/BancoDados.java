@@ -74,7 +74,6 @@ public class BancoDados {
         for (Pedido pedido : pedidos) {
             System.out.println("----------||----------\n");
             System.out.printf("Número de série: %s\n", pedido.getNumeroSerie());
-            System.out.printf("Cliente: %s\n", pedido.getCliente());
             System.out.printf("Data do pedido: %s\n\n", pedido.getDataPedido());
 
         }
