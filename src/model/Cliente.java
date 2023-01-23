@@ -1,10 +1,8 @@
 package model;
 
-import Sistema.BancoDados;
+import sistema.BancoDados;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.*;
 
 public class Cliente {
 
@@ -70,11 +68,6 @@ public class Cliente {
 
     public void listarPedidos() {
         //Método de listagem
-    }
-
-    public static void mostrarClientes() throws ParseException {
-        BancoDados bancoDados = new BancoDados();
-        bancoDados.DadosPreCadastradosClientes();
     }
 
 }

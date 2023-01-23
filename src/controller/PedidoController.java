@@ -13,6 +13,6 @@ public class PedidoController {
     public static void chamar(String numeroSerie, String dataPedido, Integer quantidadeRoupa, String status, String tipoLavagem, Cliente cliente) throws ParseException {
         Pedido pedido = new Pedido(numeroSerie, dataPedido, quantidadeRoupa, status, tipoLavagem, cliente);
 
-        pedido.listarPedido();
+        //pedido.listarPedido();
     }
 }

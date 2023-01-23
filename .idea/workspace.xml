@@ -2,37 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fdd200d-e0d7-43bc-b0b2-d80e9e5c5ed0" name="Changes" comment="Atualizando o projeto">
-      <change afterPath="$PROJECT_DIR$/UmlReduzido.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sistema/BancoDados.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/AdministradorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/ClienteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/FuncionarioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/PedidoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/TelaCliente.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/TelaCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/UsuarioController.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sistema/DadosAdministrador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sistema/DadosCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sistema/DadosFuncionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/BancoDados.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/BancoDados.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/AdministradorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/AdministradorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/ClienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/ClienteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/FuncionarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/FuncionarioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/PedidoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/PedidoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Administrador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Administrador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/AdministradorFinanceiro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/AdministradorFinanceiro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Contador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Contador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Despesa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Despesa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Estoque.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Estoque.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Funcionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Funcionario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Gerente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Gerente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Imposto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Imposto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Lavador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Lavador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Lavagem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Lavagem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Motorista.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Motorista.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Pagamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Pagamento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Pedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Pedido.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/ReceitaMes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/ReceitaMes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/RolEntrada.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/RolEntrada.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/RolRelave.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/RolRelave.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/RolSaida.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/RolSaida.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/TelaCliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sistema/BancoDados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/BancoDados.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AdministradorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/PedidoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Administrador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/AdministradorFinanceiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/AdministradorFinanceiro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Contador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Contador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Despesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Despesa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Estoque.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Funcionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Lavador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Lavador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Motorista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Motorista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Gerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Gerente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Pedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/RolEntrada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/RolEntrada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/TelaCliente.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/TelaCliente.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,18 +67,80 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2Kgll4A1devJY9d9cFPLeobx2yw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Silve/OneDrive/Área de Trabalho/UnB/2º Semestre/Orientação a Objetos/Trabalho OO/TrabalhoUML"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;338&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Silve/OneDrive/Área de Trabalho/UnB/2º Semestre/Orientação a Objetos/Trabalho OO/TrabalhoUML&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propGUI&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Tela_Login">
+    <configuration name="Tela_Cliente" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.Tela_Cliente" />
+      <module name="TrabalhoUML" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tela_Login (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.Tela_Login" />
+      <module name="TrabalhoUML" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tela_Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.Tela_Login" />
+      <module name="TrabalhoUML" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Tela_Login" />
+        <item itemvalue="Application.Tela_Login (1)" />
+        <item itemvalue="Application.Tela_Cliente" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -77,5 +166,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Atualizando o projeto" />
     <option name="LAST_COMMIT_MESSAGE" value="Atualizando o projeto" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

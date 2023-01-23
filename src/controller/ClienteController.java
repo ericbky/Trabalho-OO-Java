@@ -1,20 +1,18 @@
 package controller;
-import model.*;
-import view.*;
 
-import java.text.ParseException;
+import view.*;
 
 public class ClienteController {
 
-    public static void metodo1Cliente() throws ParseException {
+    private final Tela_Cliente view;
 
-        listarClientes(null, null, null, null, null, null);
+    public ClienteController(Tela_Cliente view) {
+        this.view = view;
     }
 
-    public static void listarClientes(String email, String telefone, String cnpj,
-                                      String razaoSocial, String inicioContrato, String fimContrato) throws ParseException {
-        Cliente cliente = new Cliente(email, telefone, cnpj, razaoSocial, inicioContrato, fimContrato);
-        cliente.mostrarClientes();
+    public void mostrarCliente(){
+        this.view.exibirClientes("Teste aqui");
     }
+
 
 }

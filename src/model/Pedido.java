@@ -1,6 +1,6 @@
 package model;
 
-import Sistema.*;
+import sistema.*;
 
 import java.text.ParseException;
 
@@ -15,6 +15,9 @@ public class Pedido {
 
     //CONSTRUTOR
 
+
+    public Pedido() {
+    }
 
     public Pedido(String numeroSerie, String dataPedido, int quantidadeRoupa, String status, String tipoLavagem, Cliente cliente) {
         this.numeroSerie = numeroSerie;
@@ -86,14 +89,5 @@ public class Pedido {
         float soma = 0;
         return soma;
     }
-
-    public void listarPedido() throws ParseException {
-        BancoDados bancoDados = new BancoDados();
-
-        System.out.println("\n\nTESTEEEEEEEE");
-
-        bancoDados.DadosPreCadastradosClientes();
-    }
-
 }
 
