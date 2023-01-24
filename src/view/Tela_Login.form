@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.Tela_Login">
-  <grid id="27dc6" binding="panel1" layout-manager="GridLayoutManager" row-count="8" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="panel_login" layout-manager="GridLayoutManager" row-count="8" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
@@ -10,13 +10,13 @@
       <foreground color="-16777216"/>
     </properties>
     <border type="bevel-raised" title="Login" title-justification="2" title-position="2">
-      <font name="Humnst777 Blk BT" size="16" style="1"/>
+      <font name="Humnst777 Blk BT" size="16" style="0"/>
       <title-color color="-16777216"/>
     </border>
     <children>
       <component id="7b5a" class="javax.swing.JCheckBox" binding="desejaEntrarComoAdministradorCheckBox" default-binding="true">
         <constraints>
-          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <font name="Humnst777 Blk BT" size="13" style="0"/>
@@ -24,7 +24,7 @@
           <text value="Deseja Entrar como Administrador?"/>
         </properties>
       </component>
-      <component id="e67f1" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+      <component id="e67f1" class="javax.swing.JTextField" binding="campo_senha">
         <constraints>
           <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="300" height="20"/>
@@ -38,7 +38,9 @@
       </component>
       <component id="3cace" class="javax.swing.JButton" binding="entrarButton" default-binding="true">
         <constraints>
-          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="260" height="-1"/>
+          </grid>
         </constraints>
         <properties>
           <background color="-15322275"/>
@@ -46,6 +48,9 @@
           <foreground color="-1771521"/>
           <text value="Entrar"/>
         </properties>
+        <clientProperties>
+          <hideActionText class="java.lang.Boolean" value="false"/>
+        </clientProperties>
       </component>
       <component id="a6771" class="javax.swing.JLabel">
         <constraints>
@@ -57,7 +62,7 @@
           <text value="Senha:"/>
         </properties>
       </component>
-      <component id="f75c" class="javax.swing.JTextField" default-binding="true">
+      <component id="f75c" class="javax.swing.JTextField" binding="campo_email">
         <constraints>
           <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="1" height="1"/>

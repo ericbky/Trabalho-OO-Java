@@ -1,22 +1,18 @@
 package view;
 
 import javax.swing.*;
-import javax.swing.border.TitledBorder;
-import javax.swing.plaf.FontUIResource;
-import javax.swing.text.StyleContext;
-import java.awt.*;
-import java.util.Locale;
 
 public class Tela_Login extends JFrame {
-    private JPanel panel1;
+    private JPanel panel_login;
     private JCheckBox desejaEntrarComoAdministradorCheckBox;
-    private JTextField textField1;
+    private JTextField campo_senha;
     private JButton entrarButton;
+    private JTextField campo_email;
 
     public Tela_Login() {
-        setContentPane(panel1);
+        setContentPane(panel_login);
         setTitle("Login");
-        setSize(450, 400);
+        setSize(430, 350);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setLocationRelativeTo(null);
