@@ -44,7 +44,6 @@ public class DadosAdministrador {
         for (Administrador administrador : administradores) {
             if (email.equalsIgnoreCase(administrador.getEmail()) && senha.equalsIgnoreCase(administrador.getSenha())) {
                 validador = true;
-                System.out.println("\nEMAIL BANCO DE DADOS: "+administrador.getEmail()+"\nSENHA: "+administrador.getSenha());
             }
         }
         return validador;

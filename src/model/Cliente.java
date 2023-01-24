@@ -1,7 +1,6 @@
 package model;
 
-import sistema.BancoDados;
-
+import java.awt.*;
 import java.text.ParseException;
 
 public class Cliente {
@@ -10,7 +9,7 @@ public class Cliente {
     private String telefone;
     private String cnpj;
     private String inicioContrato;
-    private  String razaoSocial;
+    private String razaoSocial;
     private String fimContrato;
 
     public String getEmail() {
@@ -24,6 +23,7 @@ public class Cliente {
     public void setCnpj(String cnpj) {
         this.cnpj = cnpj;
     }
+
     public String getInicioContrato() {
         return inicioContrato;
     }
@@ -65,9 +65,4 @@ public class Cliente {
         this.inicioContrato = inicioContrato;
         this.fimContrato = fimContrato;
     }
-
-    public void listarPedidos() {
-        //Método de listagem
-    }
-
 }

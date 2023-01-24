@@ -1,11 +1,13 @@
 package controller;
 
 import model.*;
-import sistema.BancoDados;
 import sistema.DadosAdministrador;
 import sistema.DadosFuncionario;
+import view.Tela_Adm;
+import view.Tela_Login;
 
 import javax.swing.*;
+import java.sql.SQLOutput;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,8 +19,6 @@ public class LoginController {
 
     public boolean verificarLoginAdm(String emailLogin, String senhaLogin) throws ParseException {
 
-        System.out.println("Nome: " + emailLogin + "\nSenha: " + senhaLogin + "\n|||||||||||||||||||||||||||||");
-
         boolean validador = dadosAdministrador.validarLogin(emailLogin, senhaLogin);
         if (validador == true) {
             JOptionPane.showMessageDialog(null, "Olá, seja bem vindo ao sistema!");
@@ -29,9 +29,7 @@ public class LoginController {
         return validador;
     }
 
-    /*public boolean verificarLoginFuncionario(String email, String senha){
-
-        System.out.println("Nome: " + emailLogin + "\nSenha: " + senhaLogin + "\n|||||||||||||||||||||||||||||");
+    public boolean verificarLoginFuncionario(String emailLogin, String senhaLogin) {
 
         boolean validador = dadosFuncionario.validarLogin(emailLogin, senhaLogin);
         if (validador == true) {
@@ -39,8 +37,16 @@ public class LoginController {
         } else {
             JOptionPane.showMessageDialog(null, "Email ou senha incorretos, digite novamente!");
         }
-
         return validador;
-    }*/
+    }
+
+    public void abrirTelaAdm() throws ParseException {
+        Tela_Adm tela_adm = new Tela_Adm();
+    }
+
+    public void abrirTelaFuncionario(){
+
+    }
+
 
 }

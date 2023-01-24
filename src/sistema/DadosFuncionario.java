@@ -20,21 +20,46 @@ public class DadosFuncionario {
 
         //Cadastrando Funcionários
 
-        funcionarios.add(new Funcionario("silveirames@hotmail.com", "P@ssword123", "61999999999", "Eric Silveira Gomes", "CEO"));
+        funcionarios.add(new Funcionario("func", "func", "61999999999", "FUNCIONÁRIO Eric", "CEO"));
 
-        funcionarios.add(new Funcionario("metraton727@gmail.com", "QualquerUmaParaTeste", "61977777777", "Luiz Gustavo", "CEO"));
+        funcionarios.add(new Funcionario("func1", "func1", "61977777777", "FUNCIONÁRIO Luiz", "CEO"));
 
-        funcionarios.add(new Funcionario("silveiraes@hotmail.com", "P@ssword123", "61999999999", "Vitor Feijó", "CEO"));
+        funcionarios.add(new Funcionario("func123", "func123", "61999999999", "FUNCIONÁRIO Vitor", "CEO"));
 
-        funcionarios.add(new Funcionario("arthurrrrrrrrr@gmail.com", "TesteTeste", "61966666666", "Arthur Teste", "CEO"));
+        funcionarios.add(new Funcionario("functeste", "functeste", "61966666666", "FUNCIONÁRIO Arthur ", "CEO"));
 
 
-        for (Funcionario funcionario : funcionarios) {
+       /* for (Funcionario funcionario : funcionarios) {
             System.out.println("----------||----------\n");
             System.out.printf("Nome: %s\n", funcionario.getNome());
             System.out.printf("Email: %s\n", funcionario.getEmail());
-            System.out.printf("Telefone: %s\n\n", funcionario.getTelefone());
+            System.out.printf("Senha: %s\n\n", funcionario.getTelefone());
 
+        }*/
+    }
+
+    public boolean validarLogin(String email, String senha) {
+        boolean validador = false;
+        DadosFuncionario dadosFuncionario = new DadosFuncionario();
+        DadosPreCadastradosFuncionarios(null, null, null, null, null);
+
+        for (Funcionario funcionario : funcionarios) {
+            if (email.equalsIgnoreCase(funcionario.getEmail()) && senha.equalsIgnoreCase(funcionario.getSenha())) {
+                validador = true;
+                //System.out.println("\nEMAIL BANCO DE DADOS: "+funcionario.getEmail()+"\nSENHA: "+funcionario.getSenha());
+            }
         }
+        return validador;
+    }
+
+    static public boolean pesquisarAdministrador(String nome) {
+        boolean validador = false;
+
+        for (Funcionario funcionarios : funcionarios) {
+            if (nome.equalsIgnoreCase(funcionarios.getNome())) {
+                validador = true;
+            }
+        }
+        return validador;
     }
 }

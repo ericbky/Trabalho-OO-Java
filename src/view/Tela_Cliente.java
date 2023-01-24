@@ -12,20 +12,15 @@ public class Tela_Cliente extends JFrame {
     private JPanel Tela_Cliente;
     private JTextField text_razao_social;
     private JButton editarClienteButton;
-    private JButton adicionarClienteButton;
     private JButton salvarAlteraçõesButton;
     private JButton voltarButton;
 
     public Tela_Cliente() {
         setContentPane(Tela_Cliente);
         setTitle("Cliente");
-        setSize(610, 625);
+        setSize(640, 625);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setLocationRelativeTo(null);
-
-    }
-
-    public void exibirClientes(String teste_aqui) {
     }
 }

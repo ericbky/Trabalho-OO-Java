@@ -1,28 +1,29 @@
 package controller;
 
-import model.Cliente;
-import sistema.BancoDados;
+import model.*;
+import sistema.*;
+import view.Tela_Login;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.text.ParseException;
 
 public class AdministradorController {
 
-    static List<Cliente> clientes = new ArrayList<Cliente>();
+    DadosCliente dadosCliente = new DadosCliente();
 
-    public static boolean cadastrarCliente(Cliente cliente){
-
-        try {
-            clientes.add(cliente);
-        }catch (Exception e){
-            return false;
-        }
-        return true;
-    }
     public static void editarCliente(){
 
     }
     public static void excluirCliente(){
 
+    }
+    public String [] exibirClientes() throws ParseException {
+        return dadosCliente.exibirClientes();
+    }
+    public int tamanhoClientes(){
+        return dadosCliente.tamanhoClientes();
+    }
+
+    public void abrirTelaLogin(){
+        Tela_Login tela_login = new Tela_Login();
     }
 }

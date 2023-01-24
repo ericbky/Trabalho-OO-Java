@@ -10,9 +10,6 @@ public class ClienteController {
         this.view = view;
     }
 
-    public void mostrarCliente(){
-        this.view.exibirClientes("Teste aqui");
-    }
 
 
 }

@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.text.ParseException;
 
-public class Tela_Login extends JFrame  {
+public class Tela_Login extends JFrame {
     private JPanel panel1;
     private JCheckBox desejaEntrarComoAdministradorCheckBox;
     private JButton entrarButton;
@@ -32,32 +32,28 @@ public class Tela_Login extends JFrame  {
             public void actionPerformed(ActionEvent e) {
                 //ARMAZENANDO OS DADOS DE ENTRADA
                 String emailLoginText = emailLogin.getText();
-                char [] senhaLoginText = senhaLogin.getPassword();
+                char[] senhaLoginText = senhaLogin.getPassword();
                 LoginController loginController = new LoginController();
-                boolean check = false;
-
-                /*desejaEntrarComoAdministradorCheckBox.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        boolean check = true;
-                    }
-                });*/
 
                 //FUNÇÃO PARA VERIFICAR LOGIN
-                try {
-                   // if(check == true){
-                    loginController.verificarLoginAdm(emailLoginText, String.valueOf(senhaLoginText));//}
-                   // else{
-                        //loginController.verificarLoginFuncionario(emailLoginText, String.valueOf(senhaLoginText));
-                   // }
-                } catch (ParseException ex) {
-                    throw new RuntimeException(ex);
+                if (desejaEntrarComoAdministradorCheckBox.isSelected() == true) {
+                    try {
+                        if (loginController.verificarLoginAdm(emailLoginText, String.valueOf(senhaLoginText)) == true) {
+                            setContentPane(TelaLogin);
+                            setVisible(false);
+                            loginController.abrirTelaAdm();
+                        }
+                    } catch (ParseException ex) {
+                        throw new RuntimeException(ex);
+                    }
+                } else {
+                    if (loginController.verificarLoginFuncionario(emailLoginText, String.valueOf(senhaLoginText)) == true) {
+                        setContentPane(TelaLogin);
+                        setVisible(false);
+                        loginController.abrirTelaFuncionario();
+                    }
                 }
             }
         });
-    }
-
-    public static void main(String[] args) {
-        Tela_Login tela_login = new Tela_Login();
     }
 }
