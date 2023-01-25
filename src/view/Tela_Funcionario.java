@@ -17,7 +17,7 @@ public class Tela_Funcionario extends JFrame {
     public Tela_Funcionario () {
         setContentPane(Tela_Funcionario);
         setTitle("Funcionário");
-        setSize(100, 100);
+        setSize(500, 450);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setLocationRelativeTo(null);
