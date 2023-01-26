@@ -1,19 +1,15 @@
 package controller;
 
-import model.*;
 import sistema.DadosAdministrador;
+import sistema.DadosCliente;
 import sistema.DadosFuncionario;
 import view.Tela_Adm;
-import view.Tela_Login;
+import view.Tela_Funcionario;
 
 import javax.swing.*;
-import java.sql.SQLOutput;
 import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class LoginController {
-    List<Administrador> administradores = new ArrayList<Administrador>();
     DadosAdministrador dadosAdministrador = new DadosAdministrador();
     DadosFuncionario dadosFuncionario = new DadosFuncionario();
 
@@ -25,7 +21,6 @@ public class LoginController {
         } else {
             JOptionPane.showMessageDialog(null, "Email ou senha incorretos, digite novamente!");
         }
-
         return validador;
     }
 
@@ -45,8 +40,10 @@ public class LoginController {
     }
 
     public void abrirTelaFuncionario(){
-
+        Tela_Funcionario tela_funcionario = new Tela_Funcionario();
     }
+    public void iniciarBancoClientes() throws ParseException {
 
-
+        DadosCliente.DadosPreCadastradosClientes(null, null, null, null, null, null);
+    }
 }

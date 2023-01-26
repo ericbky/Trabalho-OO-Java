@@ -17,14 +17,10 @@ public class Tela_Login extends JFrame {
     public Tela_Login() {
         setContentPane(TelaLogin);
         setTitle("Login");
-        setSize(450, 400);
+        setSize(470, 410);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setLocationRelativeTo(null);
-        TelaLogin.addComponentListener(new ComponentAdapter() {
-        });
-        TelaLogin.addComponentListener(new ComponentAdapter() {
-        });
 
         //AÇÃO DE CLICKAR NO BOTÃO ENTRAR
         entrarButton.addActionListener(new ActionListener() {
@@ -36,9 +32,9 @@ public class Tela_Login extends JFrame {
                 LoginController loginController = new LoginController();
 
                 //FUNÇÃO PARA VERIFICAR LOGIN
-                if (desejaEntrarComoAdministradorCheckBox.isSelected() == true) {
+                if (desejaEntrarComoAdministradorCheckBox.isSelected()) {
                     try {
-                        if (loginController.verificarLoginAdm(emailLoginText, String.valueOf(senhaLoginText)) == true) {
+                        if (loginController.verificarLoginAdm(emailLoginText, String.valueOf(senhaLoginText))) {
                             setContentPane(TelaLogin);
                             setVisible(false);
                             loginController.abrirTelaAdm();
@@ -47,7 +43,7 @@ public class Tela_Login extends JFrame {
                         throw new RuntimeException(ex);
                     }
                 } else {
-                    if (loginController.verificarLoginFuncionario(emailLoginText, String.valueOf(senhaLoginText)) == true) {
+                    if (loginController.verificarLoginFuncionario(emailLoginText, String.valueOf(senhaLoginText))) {
                         setContentPane(TelaLogin);
                         setVisible(false);
                         loginController.abrirTelaFuncionario();

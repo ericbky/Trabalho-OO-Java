@@ -94,6 +94,7 @@
         </constraints>
         <properties>
           <background color="-14474461"/>
+          <editable value="false"/>
           <font name="Humnst777 Blk BT" size="15" style="1"/>
           <foreground color="-1"/>
           <model/>
@@ -188,7 +189,7 @@
           <text value="Email:"/>
         </properties>
       </component>
-      <component id="8b9fe" class="javax.swing.JTextField" binding="text_nome_fantasia">
+      <component id="8b9fe" class="javax.swing.JTextField" binding="text_email">
         <constraints>
           <grid row="5" column="3" row-span="1" col-span="7" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="250" height="25"/>
@@ -202,7 +203,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="8f955" class="javax.swing.JTextField" binding="text_inscricao_estadual">
+      <component id="8f955" class="javax.swing.JTextField" binding="text_telefone">
         <constraints>
           <grid row="7" column="3" row-span="1" col-span="7" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="250" height="25"/>
@@ -260,7 +261,7 @@
           <text value="Endereço:"/>
         </properties>
       </component>
-      <component id="4316f" class="javax.swing.JTextField">
+      <component id="4316f" class="javax.swing.JTextField" binding="text_endereco">
         <constraints>
           <grid row="9" column="3" row-span="1" col-span="7" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="250" height="25"/>
@@ -296,28 +297,6 @@
           <grid row="6" column="10" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
       </hspacer>
-      <component id="6a045" class="javax.swing.JButton" binding="editarClienteButton" default-binding="true">
-        <constraints>
-          <grid row="20" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="100" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <font size="12" style="1"/>
-          <text value="Editar Cliente"/>
-        </properties>
-      </component>
-      <component id="83b31" class="javax.swing.JButton" default-binding="true">
-        <constraints>
-          <grid row="20" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="100" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <font size="12" style="1"/>
-          <text value="Excluir Cliente"/>
-        </properties>
-      </component>
       <component id="cd980" class="javax.swing.JButton" binding="voltarButton" default-binding="true">
         <constraints>
           <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
@@ -329,15 +308,26 @@
           <text value="Voltar"/>
         </properties>
       </component>
-      <component id="3fcba" class="javax.swing.JButton" binding="salvarAlteraçõesButton" default-binding="true">
+      <component id="6a045" class="javax.swing.JButton" binding="editarClienteButton" default-binding="true">
         <constraints>
-          <grid row="20" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+          <grid row="20" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="100" height="-1"/>
           </grid>
         </constraints>
         <properties>
           <font size="12" style="1"/>
-          <text value="Salvar Alterações"/>
+          <text value="Editar Cliente"/>
+        </properties>
+      </component>
+      <component id="83b31" class="javax.swing.JButton" binding="excluirCliente">
+        <constraints>
+          <grid row="20" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="100" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="12" style="1"/>
+          <text value="Excluir Cliente"/>
         </properties>
       </component>
     </children>

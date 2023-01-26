@@ -9,24 +9,6 @@ import java.util.List;
 public class DadosAdministrador {
     static List<Administrador> administradores = new ArrayList<Administrador>();
 
-
-    public static List<Administrador> getAdministradores() {
-        return administradores;
-    }
-
-    public static void adicionarAdministrador(Administrador administrador) {
-        administradores.add(administrador);
-    }
-
-    static public String listarAdministradores() {
-        String print = "";
-        for (Administrador administrador : administradores) {
-            print = "Email: " + administrador.getEmail() + "" +
-                    "\nSenha: " + administrador.getSenha() + "\n--------------------------------";
-        }
-        return print;
-    }
-
     public static void DadosPreCadastradosAdministrador(String email, String senha, String telefone, String nome) {
         //Cadastrando Pedidos
 

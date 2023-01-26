@@ -1,7 +1,5 @@
 package model;
 
-import sistema.BancoDados;
-
 public class Funcionario extends Usuario {
     private String nome;
     private String cargo;

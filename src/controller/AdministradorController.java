@@ -17,7 +17,7 @@ public class AdministradorController {
 
     }
     public String [] exibirClientes() throws ParseException {
-        return dadosCliente.exibirClientes();
+        return dadosCliente.comboClientes();
     }
     public int tamanhoClientes(){
         return dadosCliente.tamanhoClientes();
@@ -26,4 +26,5 @@ public class AdministradorController {
     public void abrirTelaLogin(){
         Tela_Login tela_login = new Tela_Login();
     }
-}
+
+    }

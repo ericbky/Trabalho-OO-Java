@@ -1,45 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fdd200d-e0d7-43bc-b0b2-d80e9e5c5ed0" name="Changes" comment="Atualizando o projeto 23/01 20:59">
-      <change afterPath="$PROJECT_DIR$/src/Run.java" afterDir="false" />
+    <list default="true" id="5fdd200d-e0d7-43bc-b0b2-d80e9e5c5ed0" name="Changes" comment="Atualizando o projeto 24/01 16:00">
+      <change afterPath="$PROJECT_DIR$/src/sistema/DadosPedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/Run.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/BancoDados.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosCliente.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/AdministradorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/AdministradorController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/ClienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/ClienteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/FuncionarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/FuncionarioController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/AdministradorFinanceiro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/AdministradorFinanceiro.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Contador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Contador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Despesa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Despesa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Estoque.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Estoque.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Imposto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Imposto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Lavador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Lavador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Lavagem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Lavagem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Motorista.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Motorista.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Pagamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Pagamento.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/ReceitaMes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/ReceitaMes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/RolEntrada.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/RolEntrada.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/RolRelave.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/RolRelave.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/RolSaida.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/RolSaida.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Funcionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Funcionario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Cadastro.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Login$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Login$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Ícones/ferramenta-lapis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Run.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AdministradorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ClienteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/BancoDados.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sistema/DadosAdministrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/DadosAdministrador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sistema/DadosCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/DadosCliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sistema/DadosFuncionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/DadosFuncionario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Tela_Adm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_Adm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Tela_Adm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_Adm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Tela_Cadastro.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Tela_Cadastro.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Tela_Cliente.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_Cliente.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Tela_Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Tela_Login.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_Login.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Tela_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Ícones/ferramenta-lapis.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,22 +65,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "false",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "338",
-    "last_opened_file_path": "C:/Users/Silve/OneDrive/Área de Trabalho/UnB/2º Semestre/Orientação a Objetos/Trabalho OO/TrabalhoUML",
-    "settings.editor.selected.configurable": "project.propGUI"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;false&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;362&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Silve/OneDrive/Área de Trabalho/UnB/2º Semestre/Orientação a Objetos/Trabalho OO/TrabalhoUML/src/view&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propGUI&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Silve\OneDrive\Área de Trabalho\UnB\2º Semestre\Orientação a Objetos\Trabalho OO\TrabalhoUML\src\view" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Silve\OneDrive\Área de Trabalho\UnB\2º Semestre\Orientação a Objetos\Trabalho OO\TrabalhoUML\src\view" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Run">
@@ -98,7 +102,7 @@
       <module name="TrabalhoUML" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="view.*" />
+          <option name="PATTERN" value="view.Tela_Cliente" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,7 +115,7 @@
       <module name="TrabalhoUML" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="view.*" />
+          <option name="PATTERN" value="view.Tela_Cliente" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tela_Login (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Tela_Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.Tela_Login" />
       <module name="TrabalhoUML" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="view.*" />
+          <option name="PATTERN" value="view.Tela_Cliente" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,13 +149,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tela_Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.Tela_Login" />
+      <module name="TrabalhoUML" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.Tela_Cliente" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Run" />
         <item itemvalue="Application.Tela_Login" />
         <item itemvalue="Application.Tela_Adm" />
-        <item itemvalue="Application.Tela_Login (1)" />
-        <item itemvalue="Application.Tela_Cliente" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674518422097</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Atualizando o projeto 24/01 16:00">
+      <created>1674586796728</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674586796728</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,7 +218,18 @@
     <MESSAGE value="Atualizando o projeto" />
     <MESSAGE value="Atualizando o projeto 23/01" />
     <MESSAGE value="Atualizando o projeto 23/01 20:59" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualizando o projeto 23/01 20:59" />
+    <MESSAGE value="Atualizando o projeto 24/01 16:00" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualizando o projeto 24/01 16:00" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.ConcurrentModificationException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

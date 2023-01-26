@@ -28,14 +28,6 @@ public class DadosFuncionario {
 
         funcionarios.add(new Funcionario("functeste", "functeste", "61966666666", "FUNCIONÁRIO Arthur ", "CEO"));
 
-
-       /* for (Funcionario funcionario : funcionarios) {
-            System.out.println("----------||----------\n");
-            System.out.printf("Nome: %s\n", funcionario.getNome());
-            System.out.printf("Email: %s\n", funcionario.getEmail());
-            System.out.printf("Senha: %s\n\n", funcionario.getTelefone());
-
-        }*/
     }
 
     public boolean validarLogin(String email, String senha) {
