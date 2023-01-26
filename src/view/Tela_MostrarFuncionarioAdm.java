@@ -12,8 +12,6 @@ public class Tela_MostrarFuncionarioAdm extends JFrame {
     private JTextField textField3;
     private JTextField textField4;
     private JTextField textField5;
-    private JButton editarFuncionárioButton;
-    private JButton excluirFuncionárioButton;
 
     public Tela_MostrarFuncionarioAdm() {
         setContentPane(Tela_MostrarFuncionarioAdm);
@@ -26,6 +24,6 @@ public class Tela_MostrarFuncionarioAdm extends JFrame {
     }
 
     public static void main(String[] args) {
-        view.Tela_MostrarFuncionarioAdm telaFunc = new Tela_MostrarFuncionarioAdm();
+        Tela_MostrarFuncionarioAdm telaFunc = new Tela_MostrarFuncionarioAdm();
     }
 }

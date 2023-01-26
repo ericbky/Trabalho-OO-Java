@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.Tela_MostrarFuncionarioAdm">
-  <grid id="27dc6" binding="Tela_MostrarFuncionarioAdm" layout-manager="GridLayoutManager" row-count="8" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="Tela_MostrarFuncionarioAdm" layout-manager="GridLayoutManager" row-count="7" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="567" height="400"/>
+      <xy x="20" y="20" width="528" height="400"/>
     </constraints>
     <properties>
       <background color="-2500135"/>
@@ -153,27 +153,6 @@
           <foreground color="-1"/>
         </properties>
       </component>
-      <component id="f4d51" class="javax.swing.JButton" binding="editarFuncionárioButton" default-binding="true">
-        <constraints>
-          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Editar Funcionário"/>
-        </properties>
-      </component>
-      <component id="8c039" class="javax.swing.JButton" binding="excluirFuncionárioButton" default-binding="true">
-        <constraints>
-          <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Excluir Funcionário"/>
-        </properties>
-      </component>
-      <hspacer id="6fd35">
-        <constraints>
-          <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </hspacer>
     </children>
   </grid>
 </form>
