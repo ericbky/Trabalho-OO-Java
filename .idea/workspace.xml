@@ -1,43 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fdd200d-e0d7-43bc-b0b2-d80e9e5c5ed0" name="Changes" comment="Atualizando o projeto 24/01 16:00">
-      <change afterPath="$PROJECT_DIR$/src/sistema/DadosPedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/Run.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/BancoDados.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosCliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/AdministradorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/AdministradorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/ClienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/ClienteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Funcionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Funcionario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Cadastro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Ícones/ferramenta-lapis.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AdministradorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Funcionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sistema/BancoDados.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sistema/DadosAdministrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/DadosAdministrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sistema/DadosCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/DadosCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sistema/DadosFuncionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/DadosFuncionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Tela_Adm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_Adm.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Tela_Adm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_Adm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Tela_Cadastro.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Tela_Cadastro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Tela_Cliente.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_Cliente.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Tela_Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Tela_Login.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_Login.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Tela_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Ícones/ferramenta-lapis.png" beforeDir="false" />
+    <list default="true" id="5fdd200d-e0d7-43bc-b0b2-d80e9e5c5ed0" name="Changes" comment="Atualizando o projeto 25/01 22:47">
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosAdministrador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosAdministrador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosFuncionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosFuncionario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Login$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Login$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Login$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Login$3.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674586796728</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Atualizando o projeto 25/01 22:47">
+      <created>1674697684909</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674697684909</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,7 +195,8 @@
     <MESSAGE value="Atualizando o projeto 23/01" />
     <MESSAGE value="Atualizando o projeto 23/01 20:59" />
     <MESSAGE value="Atualizando o projeto 24/01 16:00" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualizando o projeto 24/01 16:00" />
+    <MESSAGE value="Atualizando o projeto 25/01 22:47" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualizando o projeto 25/01 22:47" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
