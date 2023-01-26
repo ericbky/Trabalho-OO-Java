@@ -12,6 +12,7 @@ public class Tela_MostrarPedidoAdm extends JFrame {
     private JTextField textField3;
     private JTextField textField4;
     private JTextField textField5;
+    private JTextField textField6;
 
     public Tela_MostrarPedidoAdm() {
         setContentPane(Tela_MostrarPedidoAdm);
