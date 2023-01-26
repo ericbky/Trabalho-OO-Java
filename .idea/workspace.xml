@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fdd200d-e0d7-43bc-b0b2-d80e9e5c5ed0" name="Changes" comment="Atualizando o projeto 25/01 22:47">
+    <list default="true" id="5fdd200d-e0d7-43bc-b0b2-d80e9e5c5ed0" name="Changes" comment="Atualizando o projeto 25/01 23:47, edição de cliente funcionando">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/ClienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/ClienteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sistema/DadosCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/DadosCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/Run.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosCliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/AdministradorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/AdministradorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AdministradorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/FuncionarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/FuncionarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/PedidoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/RolEntrada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/RolEntrada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/DadosAdministrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/DadosAdministrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/DadosFuncionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/DadosFuncionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/DadosPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/DadosPedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Tela_Adm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_Adm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +54,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "false",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "false",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "362",
     "last_opened_file_path": "C:/Users/Silve/OneDrive/Área de Trabalho/UnB/2º Semestre/Orientação a Objetos/Trabalho OO/TrabalhoUML/src/view",
     "settings.editor.selected.configurable": "project.propGUI"
@@ -182,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674698364290</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Atualizando o projeto 25/01 23:47, edição de cliente funcionando">
+      <created>1674701281960</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674701281960</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,7 +224,8 @@
     <MESSAGE value="Atualizando o projeto 23/01 20:59" />
     <MESSAGE value="Atualizando o projeto 24/01 16:00" />
     <MESSAGE value="Atualizando o projeto 25/01 22:47" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualizando o projeto 25/01 22:47" />
+    <MESSAGE value="Atualizando o projeto 25/01 23:47, edição de cliente funcionando" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualizando o projeto 25/01 23:47, edição de cliente funcionando" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

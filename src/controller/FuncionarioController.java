@@ -18,7 +18,4 @@ public class FuncionarioController {
     public static void excluirPedido(){
 
     }
-
-    public void metodo1Funcionario() {
-    }
 }

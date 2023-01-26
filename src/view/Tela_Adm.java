@@ -30,8 +30,6 @@ ClienteController clienteController = new ClienteController();
 
         chamarCombox();
 
-
-
         sairButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

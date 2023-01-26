@@ -21,7 +21,6 @@ public class DadosAdministrador {
     public boolean validarLogin(String email, String senha) {
         boolean validador = false;
         DadosAdministrador dadosAdministrador = new DadosAdministrador();
-        DadosPreCadastradosAdministrador(null, null, null, null);
 
         for (Administrador administrador : administradores) {
             if (email.equalsIgnoreCase(administrador.getEmail()) && senha.equalsIgnoreCase(administrador.getSenha())) {

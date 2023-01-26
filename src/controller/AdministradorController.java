@@ -10,12 +10,6 @@ public class AdministradorController {
 
     DadosCliente dadosCliente = new DadosCliente();
 
-    public static void editarCliente(){
-
-    }
-    public static void excluirCliente(){
-
-    }
     public String [] exibirClientes() throws ParseException {
         return dadosCliente.comboClientes();
     }

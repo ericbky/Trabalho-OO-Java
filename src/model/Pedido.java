@@ -1,9 +1,5 @@
 package model;
 
-import sistema.*;
-
-import java.text.ParseException;
-
 public class Pedido {
 
     private String numeroSerie;
@@ -11,21 +7,16 @@ public class Pedido {
     private int quantidadeRoupa;
     private String status;
     private String tipoLavagem;
-    private Cliente cliente;
+    private String cnpjCliente;
 
     //CONSTRUTOR
-
-
-    public Pedido() {
-    }
-
-    public Pedido(String numeroSerie, String dataPedido, int quantidadeRoupa, String status, String tipoLavagem, Cliente cliente) {
+    public Pedido(String numeroSerie, String dataPedido, int quantidadeRoupa, String status, String tipoLavagem, String cnpjCliente) {
         this.numeroSerie = numeroSerie;
         this.dataPedido = dataPedido;
         this.quantidadeRoupa = quantidadeRoupa;
         this.status = status;
         this.tipoLavagem = tipoLavagem;
-        this.cliente = cliente;
+        this.cnpjCliente = cnpjCliente;
     }
 
     //GETTERS AND SETTERS
@@ -69,25 +60,12 @@ public class Pedido {
         this.tipoLavagem = tipoLavagem;
     }
 
-    public Cliente getCliente() {
-        return cliente;
+    public String getcnpjCliente() {
+        return cnpjCliente;
     }
 
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
-
-    //MÉTODOS
-    public float calcularSomaRoupa() {
-        float soma = 0;
-        return soma;
-    }
-    public void listarTipos() {
-
-    }
-    public float calcularPrecoFinal() {
-        float soma = 0;
-        return soma;
+    public void setCnpjCliente(Cliente cliente) {
+        this.cnpjCliente = cnpjCliente;
     }
 }
 

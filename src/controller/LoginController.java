@@ -3,6 +3,7 @@ package controller;
 import sistema.DadosAdministrador;
 import sistema.DadosCliente;
 import sistema.DadosFuncionario;
+import sistema.DadosPedido;
 import view.Tela_Adm;
 import view.Tela_Funcionario;
 
@@ -12,6 +13,8 @@ import java.text.ParseException;
 public class LoginController {
     DadosAdministrador dadosAdministrador = new DadosAdministrador();
     DadosFuncionario dadosFuncionario = new DadosFuncionario();
+
+    DadosPedido dadosPedido = new DadosPedido();
 
     public boolean verificarLoginAdm(String emailLogin, String senhaLogin) throws ParseException {
 
@@ -45,5 +48,15 @@ public class LoginController {
     public void iniciarBancoClientes() throws ParseException {
 
         DadosCliente.DadosPreCadastradosClientes(null, null, null, null, null, null);
+    }
+    public void iniciarBancoAdministradores(){
+        DadosAdministrador.DadosPreCadastradosAdministrador(null, null, null, null);
+    }
+    public void iniciarBancoFuncionarios(){
+
+        DadosFuncionario.DadosPreCadastradosFuncionarios(null,null,null,null,null);
+    }
+    public void iniciarBancoPedidos(){
+        DadosPedido.DadosPreCadastradosPedidos(null,null,null,null,null,null);
     }
 }

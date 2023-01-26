@@ -11,12 +11,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DadosFuncionario {
-
-
     static List<Funcionario> funcionarios = new ArrayList<Funcionario>();
 
     public static void DadosPreCadastradosFuncionarios(String email, String senha, String telefone, String nome, String cargo) {
-
 
         //Cadastrando Funcionários
 
@@ -33,7 +30,6 @@ public class DadosFuncionario {
     public boolean validarLogin(String email, String senha) {
         boolean validador = false;
         DadosFuncionario dadosFuncionario = new DadosFuncionario();
-        DadosPreCadastradosFuncionarios(null, null, null, null, null);
 
         for (Funcionario funcionario : funcionarios) {
             if (email.equalsIgnoreCase(funcionario.getEmail()) && senha.equalsIgnoreCase(funcionario.getSenha())) {
