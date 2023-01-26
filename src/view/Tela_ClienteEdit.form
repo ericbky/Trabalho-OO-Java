@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.Tela_ClienteEdit">
+  <grid id="27dc6" binding="Tela_Cliente" layout-manager="GridLayoutManager" row-count="20" column-count="11" same-size-horizontally="false" same-size-vertically="false" hgap="10" vgap="10">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="342" y="20" width="802" height="1007"/>
+    </constraints>
+    <properties>
+      <background color="-2500135"/>
+      <enabled value="true"/>
+      <foreground color="-11549435"/>
+    </properties>
+    <border type="bevel-raised" title="Cliente" title-justification="2" title-position="2">
+      <font name="Humnst777 Blk BT" size="16" style="0"/>
+      <title-color color="-16777216"/>
+    </border>
+    <children>
+      <component id="69713" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="13" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="18" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Início do Contrato:"/>
+        </properties>
+      </component>
+      <component id="665ca" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="15" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="18" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Fim do Contrato:"/>
+        </properties>
+      </component>
+      <component id="279da" class="javax.swing.JTextField" binding="text_cnpj">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="7" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="425" height="25"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-15322275"/>
+          <editable value="false"/>
+          <font name="Humnst777 Blk BT" size="15" style="1"/>
+          <foreground color="-1"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="347aa" class="javax.swing.JTextField" binding="text_inicio_contrato">
+        <constraints>
+          <grid row="13" column="3" row-span="1" col-span="7" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="25"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-15322275"/>
+          <editable value="true"/>
+          <font name="Humnst777 Blk BT" size="15" style="1"/>
+          <foreground color="-1"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="1b7c0" class="javax.swing.JTextField" binding="text_fim_contrato">
+        <constraints>
+          <grid row="15" column="3" row-span="1" col-span="7" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="25"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-15322275"/>
+          <editable value="true"/>
+          <font name="Humnst777 Blk BT" size="15" style="1"/>
+          <foreground color="-1"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="f9216" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <font size="18" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="CNPJ:"/>
+        </properties>
+      </component>
+      <vspacer id="4af97">
+        <constraints>
+          <grid row="16" column="3" row-span="1" col-span="7" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="8df1f">
+        <constraints>
+          <grid row="19" column="4" row-span="1" col-span="6" vsize-policy="2" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="100"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="968af">
+        <constraints>
+          <grid row="0" column="7" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="227" height="80"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="13070">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="7" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="b02df">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="7" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="8f082">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="7" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="a468">
+        <constraints>
+          <grid row="12" column="3" row-span="1" col-span="7" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="b9494">
+        <constraints>
+          <grid row="14" column="3" row-span="1" col-span="7" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="16160">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="7" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="61821" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="7" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="20" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Dados do Cliente"/>
+        </properties>
+      </component>
+      <component id="44d59" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="18" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Email:"/>
+        </properties>
+      </component>
+      <component id="8b9fe" class="javax.swing.JTextField" binding="text_email">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="7" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="25"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-15322275"/>
+          <editable value="true"/>
+          <font name="Humnst777 Blk BT" size="15" style="1"/>
+          <foreground color="-1"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="8f955" class="javax.swing.JTextField" binding="text_telefone">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="7" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="25"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-15322275"/>
+          <editable value="true"/>
+          <font name="Humnst777 Blk BT" size="15" style="1"/>
+          <foreground color="-1"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="7b6c3" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="18" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Telefone:"/>
+        </properties>
+      </component>
+      <component id="fada9" class="javax.swing.JTextField" binding="text_razao_social">
+        <constraints>
+          <grid row="11" column="3" row-span="1" col-span="7" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="25"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-15322275"/>
+          <editable value="true"/>
+          <font name="Humnst777 Blk BT" size="15" style="1"/>
+          <foreground color="-1"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="59c65" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="18" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Razão Social:"/>
+        </properties>
+      </component>
+      <component id="ad42f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="18" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Endereço:"/>
+        </properties>
+      </component>
+      <component id="4316f" class="javax.swing.JTextField" binding="text_endereco">
+        <constraints>
+          <grid row="9" column="3" row-span="1" col-span="7" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="25"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-15322275"/>
+          <editable value="true"/>
+          <font name="Humnst777 Blk BT" size="15" style="1"/>
+          <foreground color="-1"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <vspacer id="d9b42">
+        <constraints>
+          <grid row="10" column="3" row-span="1" col-span="7" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <hspacer id="c16ef">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="875d">
+        <constraints>
+          <grid row="17" column="6" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="50"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <hspacer id="f115d">
+        <constraints>
+          <grid row="6" column="10" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="cd980" class="javax.swing.JButton" binding="voltarButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="15" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="12" style="1"/>
+          <text value="Voltar"/>
+        </properties>
+      </component>
+      <component id="6a045" class="javax.swing.JButton" binding="editarClienteButton" default-binding="true">
+        <constraints>
+          <grid row="18" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="100" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="12" style="1"/>
+          <text value="Editar Cliente"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
