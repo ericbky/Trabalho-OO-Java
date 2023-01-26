@@ -2,8 +2,8 @@ package view;
 
 import javax.swing.*;
 
-public class Tela_MostrarFuncionarioAdm {
-    private JPanel Tela_MostraFuncionarioAdm;
+public class Tela_MostrarFuncionarioAdm extends JFrame {
+    private JPanel Tela_MostrarFuncionarioAdm;
     private JButton voltarBtn;
     private JLabel tituloPagina;
     private JLabel tituloDados;
@@ -14,4 +14,18 @@ public class Tela_MostrarFuncionarioAdm {
     private JTextField textField5;
     private JButton editarFuncionárioButton;
     private JButton excluirFuncionárioButton;
+
+    public Tela_MostrarFuncionarioAdm() {
+        setContentPane(Tela_MostrarFuncionarioAdm);
+        setTitle("Funcionário");
+        setSize(700, 600);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
+        setLocationRelativeTo(null);
+
+    }
+
+    public static void main(String[] args) {
+        view.Tela_MostrarFuncionarioAdm telaFunc = new Tela_MostrarFuncionarioAdm();
+    }
 }
