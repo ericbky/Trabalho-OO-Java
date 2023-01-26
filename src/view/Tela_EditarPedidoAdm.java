@@ -14,6 +14,7 @@ public class Tela_EditarPedidoAdm extends JFrame {
     private JTextField textField5;
     private JButton editarPedidoButton;
     private JButton excluirPedidoButton;
+    private JTextField textField6;
 
     public Tela_EditarPedidoAdm() {
         setContentPane(Tela_EditarPedidoAdm);
