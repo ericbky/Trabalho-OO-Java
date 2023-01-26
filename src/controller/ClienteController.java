@@ -10,11 +10,11 @@ public class ClienteController {
     DadosCliente dadosCliente = new DadosCliente();
 
     public String[] exibirCliente(String cliente) throws ParseException {
-        return dadosCliente.exibirClientes(cliente);
+        return DadosCliente.exibirClientes(cliente);
     }
 
     public void abrirTelaAdm() throws ParseException {
-        Tela_Adm tela_adm = new Tela_Adm();
+        Tela_ListarClientes tela_adm = new Tela_ListarClientes();
     }
 
     public boolean excluirCliente(String cliente) {

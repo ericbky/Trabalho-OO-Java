@@ -1,14 +1,13 @@
 package view;
 
 import controller.ClienteController;
-import model.Cliente;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.ParseException;
 
-public class Tela_Cliente extends JFrame {
+public class Tela_listarCliente extends JFrame {
     private JTextField text_cnpj;
     private JTextField text_email;
     private JTextField text_telefone;
@@ -24,7 +23,7 @@ public class Tela_Cliente extends JFrame {
 
     ClienteController clienteController = new ClienteController();
 
-    public Tela_Cliente() {
+    public Tela_listarCliente() {
         setContentPane(Tela_Cliente);
         setTitle("Cliente");
         setSize(700, 685);
@@ -90,7 +89,7 @@ public class Tela_Cliente extends JFrame {
             JOptionPane.showMessageDialog(null, "Cliente excluído com sucesso!");
             setContentPane(Tela_Cliente);
             setVisible(false);
-            Tela_Adm tela_adm = new Tela_Adm();
+            Tela_ListarClientes tela_adm = new Tela_ListarClientes();
         }
     }
 

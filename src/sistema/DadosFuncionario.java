@@ -40,14 +40,36 @@ public class DadosFuncionario {
         return validador;
     }
 
-    static public boolean pesquisarAdministrador(String nome) {
-        boolean validador = false;
+    static public String[] comboFuncionarios() throws ParseException {
+        String[] vFuncionarios = new String[100];
+        int cont = 0;
 
-        for (Funcionario funcionarios : funcionarios) {
-            if (nome.equalsIgnoreCase(funcionarios.getNome())) {
-                validador = true;
+        for (Funcionario funcionario : funcionarios) {
+            vFuncionarios[cont] = funcionario.getNome();
+            cont++;
+        }
+        return vFuncionarios;
+    }
+
+    public static int tamanhoFuncionarios() {
+        return funcionarios.size();
+    }
+
+    static public String[] exibirFuncionario(String funcionarioCombo) throws ParseException {
+
+        String[] vFuncionario = new String[100];
+        String nomeFunc;
+        //Salvando os dados para retornar na view de clientes
+        for (Funcionario funcionario : funcionarios) {
+            nomeFunc = funcionario.getNome();
+            if (funcionarioCombo.equals(nomeFunc)) {
+                vFuncionario[0] = funcionario.getEmail();
+                vFuncionario[1] = funcionario.getSenha();
+                vFuncionario[2] = funcionario.getTelefone();
+                vFuncionario[3] = funcionario.getNome();
+                vFuncionario[4] = funcionario.getCargo();
             }
         }
-        return validador;
+        return vFuncionario;
     }
 }

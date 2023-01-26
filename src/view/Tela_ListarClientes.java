@@ -8,27 +8,27 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.ParseException;
 
-public class Tela_Adm extends JFrame {
+public class Tela_ListarClientes extends JFrame {
 
     private JButton sairButton;
     private JTextField menuDeOpçõesTextField;
     private JComboBox lista_clientes;
     private JButton escolherButton;
     private JButton cadastrarButton;
-    private JPanel Tela_Adm;
+    private JPanel tela_ListarClientes;
 ClienteController clienteController = new ClienteController();
     AdministradorController administradorController = new AdministradorController();
 
-    public Tela_Adm() throws ParseException {
+    public Tela_ListarClientes() throws ParseException {
 
-        setContentPane(Tela_Adm);
-        setTitle("Administrador");
+        setContentPane(tela_ListarClientes);
+        setTitle("Listar Clientes");
         setSize(550, 480);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setLocationRelativeTo(null);
 
-        chamarCombox();
+        chamarComboBox();
 
         sairButton.addActionListener(new ActionListener() {
             @Override
@@ -38,7 +38,7 @@ ClienteController clienteController = new ClienteController();
                 } catch (ParseException ex) {
                     throw new RuntimeException(ex);
                 }
-                setContentPane(Tela_Adm);
+                setContentPane(tela_ListarClientes);
                 setVisible(false);
                 administradorController.abrirTelaLogin();
             }
@@ -50,11 +50,11 @@ ClienteController clienteController = new ClienteController();
                 String cliente;
                 cliente = lista_clientes.getSelectedItem() + "";
                 //Fechando a tela ADM, chamando a tela de exibir cliente e passando como parâmetro o cliente
-                setContentPane(Tela_Adm);
+                setContentPane(tela_ListarClientes);
                 setVisible(false);
                 try {
                     limparCombobox();
-                    Tela_Cliente tela_cliente = new Tela_Cliente();
+                    Tela_listarCliente tela_cliente = new Tela_listarCliente();
                     tela_cliente.exibirCliente(cliente);
                 } catch (ParseException ex) {
                     throw new RuntimeException(ex);
@@ -67,7 +67,7 @@ ClienteController clienteController = new ClienteController();
             //Chamando a tela cadastro de clientes e fechando a tela de Administrador
                 try {
                     limparCombobox();
-                    setContentPane(Tela_Adm);
+                    setContentPane(tela_ListarClientes);
                     setVisible(false);
                     Tela_ClienteCad clienteCad = new Tela_ClienteCad();
                 } catch (ParseException ex) {
@@ -78,7 +78,7 @@ ClienteController clienteController = new ClienteController();
         });
     }
 
-    public void chamarCombox() throws ParseException {
+    public void chamarComboBox() throws ParseException {
 
         String razaoClientes[] = new String[100];
         int tamanhoClientes;

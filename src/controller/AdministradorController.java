@@ -11,10 +11,10 @@ public class AdministradorController {
     DadosCliente dadosCliente = new DadosCliente();
 
     public String [] exibirClientes() throws ParseException {
-        return dadosCliente.comboClientes();
+        return DadosCliente.comboClientes();
     }
     public int tamanhoClientes(){
-        return dadosCliente.tamanhoClientes();
+        return DadosCliente.tamanhoClientes();
     }
 
     public void abrirTelaLogin(){

@@ -20,6 +20,5 @@ public class Run {
             throw new RuntimeException(ex);
         }
         Tela_Login tela = new Tela_Login();
-
     }
 }

@@ -4,8 +4,8 @@ import sistema.DadosAdministrador;
 import sistema.DadosCliente;
 import sistema.DadosFuncionario;
 import sistema.DadosPedido;
-import view.Tela_Adm;
-import view.Tela_Funcionario;
+import view.Tela_ListarClientes;
+import view.Tela_MenuFuncionario;
 
 import javax.swing.*;
 import java.text.ParseException;
@@ -39,11 +39,11 @@ public class LoginController {
     }
 
     public void abrirTelaAdm() throws ParseException {
-        Tela_Adm tela_adm = new Tela_Adm();
+        Tela_ListarClientes tela_adm = new Tela_ListarClientes();
     }
 
     public void abrirTelaFuncionario(){
-        Tela_Funcionario tela_funcionario = new Tela_Funcionario();
+        Tela_MenuFuncionario tela_funcionario = new Tela_MenuFuncionario();
     }
     public void iniciarBancoClientes() throws ParseException {
 
