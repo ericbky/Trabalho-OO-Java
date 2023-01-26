@@ -47,12 +47,10 @@ public class Tela_Pedido extends JFrame {
                 //Fechando a tela ADM, chamando a tela de exibir cliente e passando como parâmetro o cliente
                 setContentPane(Tela_PedidoAdm);
                 setVisible(false);
-                try {
-                    Tela_Pedido pedido1 = new Tela_Pedido();
-                    //tela.exibirCliente(cliente);
-                } catch (ParseException ex) {
-                    throw new RuntimeException(ex);
-                }
+                Tela_exibirPedido tela_exibirPedido = new Tela_exibirPedido();
+
+                tela_exibirPedido.exibirPedido(pedido);
+                //tela.exibirCliente(cliente);
             }
         });
 
@@ -64,7 +62,7 @@ public class Tela_Pedido extends JFrame {
         int cont;
 
         //Pegando as razões sociais do banco de dados
-        numeroSerie = pedidoController.exibirPedidos();
+        numeroSerie = pedidoController.exibirPedidosCB();
         //Vendo quantos clientes tem cadastrados para colocar no laço de repetição
         tamanhoPedidos = pedidoController.tamanhoPedidos();
 

@@ -54,7 +54,7 @@ ClienteController clienteController = new ClienteController();
                 setVisible(false);
                 try {
                     limparCombobox();
-                    Tela_listarCliente tela_cliente = new Tela_listarCliente();
+                    Tela_exibirCliente tela_cliente = new Tela_exibirCliente();
                     tela_cliente.exibirCliente(cliente);
                 } catch (ParseException ex) {
                     throw new RuntimeException(ex);

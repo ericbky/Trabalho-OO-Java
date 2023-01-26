@@ -1,17 +1,24 @@
 package view;
 
+import controller.PedidoController;
+
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.ParseException;
 
 public class Tela_exibirPedido extends JFrame {
     private JPanel Tela_MostrarPedidoAdm;
     private JButton voltarBtn;
     private JLabel tituloPagina;
     private JLabel tituloDados;
-    private JTextField textField1;
-    private JTextField textField2;
-    private JTextField textField3;
-    private JTextField textField4;
-    private JTextField textField5;
+    private JTextField tex_numSerie;
+    private JTextField text_DataP;
+    private JTextField text_qntRoupa;
+    private JTextField text_Status;
+    private JTextField text_tLavagem;
+    private JButton editarPedidoButton;
+    private JButton excluirPedidoButton;
 
     public Tela_exibirPedido() {
         setContentPane(Tela_MostrarPedidoAdm);
@@ -23,4 +30,51 @@ public class Tela_exibirPedido extends JFrame {
 
     }
 
+    public void exibirPedido(String pedido) {
+        PedidoController pedidoController = new PedidoController();
+
+        String[] vPedido = new String[7];
+
+        vPedido = pedidoController.exibirDadosPedido(pedido);
+
+        tex_numSerie.setText(vPedido[0]);
+        text_DataP.setText(vPedido[1]);
+        text_qntRoupa.setText(vPedido[2]);
+        text_Status.setText(vPedido[3]);
+        text_tLavagem.setText(vPedido[4]);
+
+        voltarBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setContentPane(Tela_MostrarPedidoAdm);
+                setVisible(false);
+                try {
+                    Tela_Pedido tela_pedido = new Tela_Pedido();
+                } catch (ParseException ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
+        });
+        editarPedidoButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setContentPane(Tela_MostrarPedidoAdm);
+                setVisible(false);
+            }
+        });
+        excluirPedidoButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(null, "Pedido excluído com sucesso!");
+                setContentPane(Tela_MostrarPedidoAdm);
+                setVisible(false);
+                pedidoController.excluirPedido(pedido);
+                try {
+                    Tela_Pedido tela_pedido = new Tela_Pedido();
+                } catch (ParseException ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
+        });
+    }
 }

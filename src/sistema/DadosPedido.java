@@ -37,4 +37,42 @@ public class DadosPedido {
         }
         return vPedidos;
     }
+
+    public static String[] exibirDadosPedido(String numPedido){
+
+        String[] vPedidos = new String[100];
+        String numSerie;
+        //Salvando os dados para retornar na view de clientes
+        for (Pedido pedido : pedidos) {
+            numSerie = pedido.getNumeroSerie();
+            if (numPedido.equals(numSerie)) {
+                vPedidos[0] = pedido.getNumeroSerie();
+                vPedidos[1] = pedido.getDataPedido();
+                vPedidos[2] = String.valueOf(pedido.getQuantidadeRoupa());
+                vPedidos[3] = pedido.getStatus();
+                vPedidos[4] = pedido.getTipoLavagem();
+            }}
+        return vPedidos;
+    }
+
+    public static boolean excluirPedido(String pedidoEx){
+        int cont = 0, num = 0;
+        boolean validarExclusao = false;
+        for (Pedido pedido : pedidos) {
+            if (pedidoEx.equals(pedido.getNumeroSerie())) {
+                num = cont;
+                validarExclusao = true;
+            }
+            cont++;
+        }
+        if (validarExclusao) {
+            return exclusaoPedido(num);
+        } else {
+            return false;
+        }
+    }
+    private static boolean exclusaoPedido(int num) {
+        pedidos.remove(num);
+        return true;
+    }
 }

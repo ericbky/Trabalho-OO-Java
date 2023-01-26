@@ -1,43 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fdd200d-e0d7-43bc-b0b2-d80e9e5c5ed0" name="Changes" comment="Atualizando o projeto 26/01 01/09, edição da tela de pedidos, atualizando mas não completa">
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+    <list default="true" id="5fdd200d-e0d7-43bc-b0b2-d80e9e5c5ed0" name="Changes" comment="Atualizando o projeto 26/01 12:35">
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosAdministrador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosAdministrador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosFuncionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosFuncionario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/ClienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/ClienteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/FuncionarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/FuncionarioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosPedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosPedido.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/PedidoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/PedidoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Pedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/Pedido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/model/RolEntrada.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/model/RolEntrada.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Adm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TrabalhoUML/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TrabalhoUML/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TrabalhoUML/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TrabalhoUML/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TrabalhoUML/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TrabalhoUML/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TrabalhoUML/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TrabalhoUML/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TrabalhoUML/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TrabalhoUML/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TrabalhoUML/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AdministradorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/FuncionarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/FuncionarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sistema/DadosFuncionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/DadosFuncionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Tela_Adm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_ListarClientes.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Tela_Adm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_ListarClientes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Tela_Cliente.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_listarCliente.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Tela_Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_listarCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Pedido$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Pedido$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Pedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Pedido.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_exibirPedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_exibirPedido.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/PedidoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/DadosPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/DadosPedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Tela_ClienteEdit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_ClienteEdit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Tela_ListarClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_ListarClientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Tela_Pedido.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_Pedido.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Tela_Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Tela_exibirPedido.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_exibirPedido.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Tela_exibirPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_exibirPedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Tela_listarCliente.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_exibirCliente.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Tela_listarCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Tela_exibirCliente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +54,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
     "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "160",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "false",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "362",
     "last_opened_file_path": "C:/Users/Silve/OneDrive/Área de Trabalho/UnB/2º Semestre/Orientação a Objetos/Trabalho OO/TrabalhoUML",
     "settings.editor.selected.configurable": "project.propGUI"
@@ -103,7 +84,7 @@
       <module name="TrabalhoUML" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="view.Tela_listarCliente" />
+          <option name="PATTERN" value="view.Tela_exibirCliente" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,7 +97,7 @@
       <module name="TrabalhoUML" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="view.Tela_listarCliente" />
+          <option name="PATTERN" value="view.Tela_exibirCliente" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,12 +144,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tela_listarCliente" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="view.Tela_listarCliente" />
+    <configuration name="Tela_exibirCliente" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.Tela_exibirCliente" />
       <module name="TrabalhoUML" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="view.Tela_listarCliente" />
+          <option name="PATTERN" value="view.Tela_exibirCliente" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -243,7 +224,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674706205114</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Atualizando o projeto 26/01 12:35">
+      <created>1674747293747</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674747293747</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Atualizando o projeto 26/01 12:35">
+      <created>1674747549028</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674747549028</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,7 +260,8 @@
     <MESSAGE value="Atualizando o projeto 25/01 22:47" />
     <MESSAGE value="Atualizando o projeto 25/01 23:47, edição de cliente funcionando" />
     <MESSAGE value="Atualizando o projeto 26/01 01/09, edição da tela de pedidos, atualizando mas não completa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualizando o projeto 26/01 01/09, edição da tela de pedidos, atualizando mas não completa" />
+    <MESSAGE value="Atualizando o projeto 26/01 12:35" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualizando o projeto 26/01 12:35" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
