@@ -42,7 +42,7 @@ public class DadosCliente {
         return clientes.size();
     }
 
-    static public String [] exibirClientes(String clienteCombo) throws ParseException {
+    static public String[] exibirClientes(String clienteCombo) throws ParseException {
 
         String[] vClientes = new String[100];
         String razaoSocial;
@@ -80,8 +80,28 @@ public class DadosCliente {
     }
 
     private boolean exclusaoCliente(int num) {
-
         clientes.remove(num);
+        return true;
+    }
+
+    public boolean editarDadosCliente(String[] dadosCliente) throws ParseException {
+        int cont = 0, num = 0;
+        boolean validarExclusao = false;
+        //Buncando os clientes na lista, removendo e adicionando os novos dados
+        for (Cliente cliente : clientes) {
+            if (dadosCliente.equals(cliente.getCnpj())) {
+                num = cont;
+            }
+            cont++;
+        }
+
+        //excluindo cliente, alterando os dados
+        clientes.remove(num);
+
+        //adicionondo os novos dados
+        clientes.add(new Cliente(dadosCliente[1]+"",dadosCliente[2]+"",
+                dadosCliente[0]+"", dadosCliente[4]+"", dadosCliente[3]+"",
+                dadosCliente[5]+"", dadosCliente[6]+""));
         return true;
     }
 }

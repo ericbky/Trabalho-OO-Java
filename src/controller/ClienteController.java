@@ -25,8 +25,7 @@ public class ClienteController {
         return DadosCliente.cadastrarCliente(dadosClienteCad);
     }
 
-    public boolean editarCadastroCliente(String[] cliente) {
-        ;
-        return true;
+    public boolean editarCadastroCliente(String[] cliente) throws ParseException {
+        return dadosCliente.editarDadosCliente(cliente);
     }
 }

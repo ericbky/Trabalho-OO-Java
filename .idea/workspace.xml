@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fdd200d-e0d7-43bc-b0b2-d80e9e5c5ed0" name="Changes" comment="Atualizando o projeto 25/01 22:47">
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosAdministrador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosAdministrador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosFuncionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/Sistema/DadosFuncionario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Login$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Login$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Login$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/view/Tela_Login$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/ClienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TrabalhoUML/controller/ClienteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sistema/DadosCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sistema/DadosCliente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,19 +33,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;false&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;362&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Silve/OneDrive/Área de Trabalho/UnB/2º Semestre/Orientação a Objetos/Trabalho OO/TrabalhoUML/src/view&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propGUI&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "false",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "false",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "362",
+    "last_opened_file_path": "C:/Users/Silve/OneDrive/Área de Trabalho/UnB/2º Semestre/Orientação a Objetos/Trabalho OO/TrabalhoUML/src/view",
+    "settings.editor.selected.configurable": "project.propGUI"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="controller" />
@@ -176,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674697684909</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Atualizando o projeto 25/01 22:47">
+      <created>1674698364290</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674698364290</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
