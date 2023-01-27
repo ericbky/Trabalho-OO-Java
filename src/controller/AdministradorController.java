@@ -1,14 +1,39 @@
 package controller;
 
+import model.*;
+import sistema.*;
+import view.Tela_Login;
+
+import java.text.ParseException;
+
 public class AdministradorController {
 
-    public static void cadastrarCliente(){
+    DadosCliente dadosCliente = new DadosCliente();
+
+    public String[] exibirClientes() throws ParseException {
+        return DadosCliente.comboClientes();
+    }
+
+    public int tamanhoClientes() {
+        return DadosCliente.tamanhoClientes();
+    }
+
+    public void abrirTelaLogin() {
+        Tela_Login tela_login = new Tela_Login();
+    }
+
+    public String[] buscarAdministrador1() {
+        return DadosAdministrador.adm1();
 
     }
-    public static void editarCliente(){
+
+    public String[] buscarAdministrador2() {
+        return DadosAdministrador.adm2();
 
     }
-    public static void excluirCliente(){
+
+    public String[] buscarAdministrador3() {
+        return DadosAdministrador.adm3();
 
     }
 }

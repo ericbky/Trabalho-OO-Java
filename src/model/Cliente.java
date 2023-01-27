@@ -1,18 +1,16 @@
 package model;
 
-import Sistema.BancoDados;
-
+import java.awt.*;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.*;
 
 public class Cliente {
 
     private final String email;
     private String telefone;
     private String cnpj;
+    private String endereco;
     private String inicioContrato;
-    private  String razaoSocial;
+    private String razaoSocial;
     private String fimContrato;
 
     public String getEmail() {
@@ -26,6 +24,7 @@ public class Cliente {
     public void setCnpj(String cnpj) {
         this.cnpj = cnpj;
     }
+
     public String getInicioContrato() {
         return inicioContrato;
     }
@@ -58,23 +57,22 @@ public class Cliente {
         this.fimContrato = fimContrato;
     }
 
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
     public Cliente(String email, String telefone, String cnpj,
-                   String razaoSocial, String inicioContrato, String fimContrato) throws ParseException {
+                   String razaoSocial,  String endereco, String inicioContrato, String fimContrato) throws ParseException {
         this.email = email;
         this.telefone = telefone;
         this.cnpj = cnpj;
         this.razaoSocial = razaoSocial;
+        this.endereco = endereco;
         this.inicioContrato = inicioContrato;
         this.fimContrato = fimContrato;
     }
-
-    public void listarPedidos() {
-        //Método de listagem
-    }
-
-    public static void mostrarClientes() throws ParseException {
-        BancoDados bancoDados = new BancoDados();
-        bancoDados.DadosPreCadastradosClientes();
-    }
-
 }

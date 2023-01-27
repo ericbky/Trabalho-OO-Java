@@ -1,20 +1,31 @@
 package controller;
-import model.*;
+
 import view.*;
+import sistema.DadosCliente;
 
 import java.text.ParseException;
 
 public class ClienteController {
 
-    public static void metodo1Cliente() throws ParseException {
+    DadosCliente dadosCliente = new DadosCliente();
 
-        listarClientes(null, null, null, null, null, null);
+    public String[] exibirCliente(String cliente) throws ParseException {
+        return DadosCliente.exibirClientes(cliente);
     }
 
-    public static void listarClientes(String email, String telefone, String cnpj,
-                                      String razaoSocial, String inicioContrato, String fimContrato) throws ParseException {
-        Cliente cliente = new Cliente(email, telefone, cnpj, razaoSocial, inicioContrato, fimContrato);
-        cliente.mostrarClientes();
+    public void abrirTelaAdm() throws ParseException {
+        Tela_ListarClientes tela_adm = new Tela_ListarClientes();
     }
 
+    public boolean excluirCliente(String cliente) {
+        return dadosCliente.excluirCliente(cliente);
+    }
+
+    public boolean cadastrarCliente(String[] dadosClienteCad) throws ParseException {
+        return DadosCliente.cadastrarCliente(dadosClienteCad);
+    }
+
+    public boolean editarCadastroCliente(String[] cliente) throws ParseException {
+        return dadosCliente.editarDadosCliente(cliente);
+    }
 }

@@ -1,7 +1,5 @@
 package model;
 
-import Sistema.BancoDados;
-
 public class Funcionario extends Usuario {
     private String nome;
     private String cargo;
@@ -30,30 +28,5 @@ public class Funcionario extends Usuario {
 
     public void setCargo(String cargo) {
         this.cargo = cargo;
-    }
-
-   /* public boolean salvarFuncionario(String nome, String cargo, String telefone) {
-        try{
-            FileOutputStream arquivo = new FileOutputStream("arquivoFuncionario.txt");
-            PrintWriter pw = new PrintWriter(arquivo);
-
-            pw.print(nome + ";"+cargo+";"+telefone+";");
-
-            System.out.println(nome + ";"+cargo+";"+telefone+";\n");
-
-            pw.close();
-            arquivo.close();
-
-        }catch (Exception erroFun){
-            System.out.println("Erro ao abrir o arquivo!");
-        }
-
-        return  true;
-    }*/
-
-    public static void buscarFuncionario() {
-        BancoDados bancoDados = new BancoDados();
-
-        bancoDados.DadosPreCadastradosFuncionarios();
     }
 }

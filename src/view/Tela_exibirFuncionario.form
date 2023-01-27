@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.Tela_exibirFuncionario">
+  <grid id="27dc6" binding="Tela_MostrarFuncionarioAdm" layout-manager="GridLayoutManager" row-count="8" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="528" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-2500135"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="41d9a" class="javax.swing.JLabel" binding="tituloPagina">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="20" style="3"/>
+          <foreground color="-16777216"/>
+          <text value="                  Funcionário"/>
+        </properties>
+      </component>
+      <hspacer id="6a141">
+        <constraints>
+          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="2d3a5" class="javax.swing.JButton" binding="voltarBtn">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Voltar"/>
+        </properties>
+      </component>
+      <component id="c07c8" class="javax.swing.JLabel" binding="tituloDados">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="                     Dados do Funcionário"/>
+        </properties>
+      </component>
+      <hspacer id="1d22e">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="14ab8" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="E-mail:"/>
+        </properties>
+      </component>
+      <component id="2308b" class="javax.swing.JTextField" binding="text_email">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-15326627"/>
+          <editable value="false"/>
+          <foreground color="-1"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="220a8" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Senha:"/>
+        </properties>
+      </component>
+      <component id="ee8cd" class="javax.swing.JTextField" binding="text_senha">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-15326627"/>
+          <editable value="false"/>
+          <foreground color="-1"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="931fa" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Telefone:"/>
+        </properties>
+      </component>
+      <component id="6ed38" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Nome:"/>
+        </properties>
+      </component>
+      <component id="e0834" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Cargo: "/>
+        </properties>
+      </component>
+      <component id="756d5" class="javax.swing.JTextField" binding="text_Telefone">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-15326627"/>
+          <editable value="false"/>
+          <foreground color="-1"/>
+        </properties>
+      </component>
+      <component id="b0050" class="javax.swing.JTextField" binding="text_Nome">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-15326627"/>
+          <editable value="false"/>
+          <foreground color="-1"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="b17e8" class="javax.swing.JTextField" binding="text_Cargo">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-15326627"/>
+          <editable value="false"/>
+          <foreground color="-1"/>
+        </properties>
+      </component>
+      <component id="2cba0" class="javax.swing.JButton" binding="excluirFuncionarioButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Excluir Funcionario"/>
+        </properties>
+      </component>
+      <component id="f583f" class="javax.swing.JButton" binding="editarFuncionarioButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Editar Funcionario"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

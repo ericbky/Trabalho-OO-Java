@@ -1,18 +1,33 @@
 package controller;
 
 import model.*;
+import sistema.*;
 
 import java.text.ParseException;
 
 public class PedidoController {
 
-    public static void metodo1Pedido() throws ParseException {
-        chamar(null, null, 0, null, null, null);
+    public String [] exibirDadosPedido(String pedido){
+        return DadosPedido.exibirDadosPedido(pedido);
     }
 
-    public static void chamar(String numeroSerie, String dataPedido, Integer quantidadeRoupa, String status, String tipoLavagem, Cliente cliente) throws ParseException {
-        Pedido pedido = new Pedido(numeroSerie, dataPedido, quantidadeRoupa, status, tipoLavagem, cliente);
-
-        pedido.listarPedido();
+    public String [] exibirPedidosCB() throws ParseException {
+        return DadosPedido.comboPedidos();
     }
+    public int tamanhoPedidos(){
+        return DadosPedido.tamanhoPedidos();
+    }
+
+    public boolean excluirPedido(String pedidoEx){
+        return DadosPedido.excluirPedido(pedidoEx);
+    }
+
+    public boolean cadastrarPedido (String [] dadosPedidoCad, int num){
+        return DadosPedido.cadastrarPedido(dadosPedidoCad, num);
+    }
+
+    public boolean procurarCliente(String cnpjCliente){
+        return DadosCliente.procurarCliente(cnpjCliente);
+    }
+
 }

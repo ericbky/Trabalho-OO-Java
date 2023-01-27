@@ -3,8 +3,8 @@ import java.util.*;
 
 public class Gerente extends Administrador{
 
-    public Gerente(String email, String senha, String telefone, String nome, String cargo, int opcaoUsuario) {
-        super(email, senha, telefone, nome, cargo, opcaoUsuario);
+    public Gerente(String email, String senha, String telefone, String nome) {
+        super(email, senha, telefone, nome);
     }
 
     public void mudarStatusPedido(){

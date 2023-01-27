@@ -5,8 +5,8 @@ public class RolEntrada extends Pedido{
 
     private String dataLavagem;
 
-    public RolEntrada(String numeroSerie, String dataPedido, int quantidadeRoupa, String status, String tipoLavagem, Cliente cliente) {
-        super(numeroSerie, dataPedido, quantidadeRoupa, status, tipoLavagem, cliente);
+    public RolEntrada(String numeroSerie, String dataPedido, int quantidadeRoupa, String status, String tipoLavagem, String cnpjCliente) {
+        super(numeroSerie, dataPedido, quantidadeRoupa, status, tipoLavagem, cnpjCliente);
     }
 
     public String getDataLavagem() {

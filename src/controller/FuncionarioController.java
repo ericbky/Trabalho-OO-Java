@@ -1,24 +1,56 @@
 package controller;
 
-import model.*;
+import sistema.DadosFuncionario;
+import view.Tela_MenuFuncionario;
 
-import java.util.*;
+import java.text.ParseException;
 
 public class FuncionarioController {
 
+    DadosFuncionario dadosFuncionario = new DadosFuncionario();
 
-    public static void cadastrarPedido(){
-
-    } public static void editarPedido(){
-
-    }
-    public static void listarPedido(){
-
-    }
-    public static void excluirPedido(){
-
+    public String[] exibirFuncionariosCB() throws ParseException {
+        return DadosFuncionario.comboFuncionarios();
     }
 
-    public void metodo1Funcionario() {
+    public String [] exibirFuncionario(String funcionario) throws ParseException {
+
+        return DadosFuncionario.exibirFuncionario(funcionario);
+    }
+
+    public boolean editarFuncionario(String [] funcionario){
+
+        return dadosFuncionario.editarDadosFuncionario(funcionario);
+    }
+
+    public int tamanhoFuncionarios(){
+        return DadosFuncionario.tamanhoFuncionarios();
+    }
+
+    public boolean excluirFuncionario(String funcionario){
+        return dadosFuncionario.excluirFuncionario(funcionario);
+    }
+
+    public boolean cadastrarFuncionario(String [] dadosFuncionario){
+        return  DadosFuncionario.cadastrarFuncionario(dadosFuncionario);
+    }
+
+    public static void cadastrarPedido() {
+    }
+
+    public void abrirTelaMenuFuncionario(){
+        Tela_MenuFuncionario tela_menuFuncionario = new Tela_MenuFuncionario();
+    }
+
+    public static void editarPedido() {
+
+    }
+
+    public static void listarPedido() {
+
+    }
+
+    public static void excluirPedido() {
+
     }
 }
