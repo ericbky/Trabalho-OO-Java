@@ -10,15 +10,30 @@ public class AdministradorController {
 
     DadosCliente dadosCliente = new DadosCliente();
 
-    public String [] exibirClientes() throws ParseException {
+    public String[] exibirClientes() throws ParseException {
         return DadosCliente.comboClientes();
     }
-    public int tamanhoClientes(){
+
+    public int tamanhoClientes() {
         return DadosCliente.tamanhoClientes();
     }
 
-    public void abrirTelaLogin(){
+    public void abrirTelaLogin() {
         Tela_Login tela_login = new Tela_Login();
     }
 
+    public String[] buscarAdministrador1() {
+        return DadosAdministrador.adm1();
+
     }
+
+    public String[] buscarAdministrador2() {
+        return DadosAdministrador.adm2();
+
+    }
+
+    public String[] buscarAdministrador3() {
+        return DadosAdministrador.adm3();
+
+    }
+}

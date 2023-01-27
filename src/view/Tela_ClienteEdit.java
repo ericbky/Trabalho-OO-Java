@@ -43,26 +43,27 @@ public class Tela_ClienteEdit extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 //ARMAZENANDO OS DADOS DE ENTRADA
                 ClienteController clienteController = new ClienteController();
-                String[] dadosClienteCad = new String[7];
+                String[] dadosClienteEdit = new String[7];
 
-                dadosClienteCad[0] = text_cnpj.getText();
-                dadosClienteCad[1] = text_email.getText();
-                dadosClienteCad[2] = text_endereco.getText();
-                dadosClienteCad[3] = text_email.getText();
-                dadosClienteCad[4] = text_razao_social.getText();
-                dadosClienteCad[5] = text_inicio_contrato.getText();
-                dadosClienteCad[6] = text_fim_contrato.getText();
+                dadosClienteEdit[0] = text_cnpj.getText();
+                dadosClienteEdit[1] = text_email.getText();
+                dadosClienteEdit[2] = text_endereco.getText();
+                dadosClienteEdit[3] = text_email.getText();
+                dadosClienteEdit[4] = text_razao_social.getText();
+                dadosClienteEdit[5] = text_inicio_contrato.getText();
+                dadosClienteEdit[6] = text_fim_contrato.getText();
 
-                if ((dadosClienteCad[0].length() < 6) ||
-                        (dadosClienteCad[2].length() < 10) ||
-                        (dadosClienteCad[3].length() < 10) ||
-                        (dadosClienteCad[4].length() < 3) ||
-                        (dadosClienteCad[5].length() < 9) ||
-                        (dadosClienteCad[6].length() < 9)) {
+                if ((dadosClienteEdit[0].length() < 6) ||
+                        (dadosClienteEdit[1].length() < 6) ||
+                        (dadosClienteEdit[2].length() < 10) ||
+                        (dadosClienteEdit[3].length() < 10) ||
+                        (dadosClienteEdit[4].length() < 3) ||
+                        (dadosClienteEdit[5].length() < 9) ||
+                        (dadosClienteEdit[6].length() < 9)) {
                     JOptionPane.showMessageDialog(null, "Digite dados válidos!");
                 } else {
                     try {
-                        if (clienteController.editarCadastroCliente(dadosClienteCad)) {
+                        if (clienteController.editarCadastroCliente(dadosClienteEdit)) {
                             JOptionPane.showMessageDialog(null, "Cliente editado com sucesso!!");
                             setContentPane(Tela_Cliente);
                             setVisible(false);

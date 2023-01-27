@@ -72,4 +72,53 @@ public class DadosFuncionario {
         }
         return vFuncionario;
     }
+
+    public boolean editarDadosFuncionario(String[] dadosFuncionario) {
+        int cont = 0, num = 0;
+        boolean validarExclusao = false;
+        //Buncando os clientes na lista, removendo e adicionando os novos dados
+        for (Funcionario funcionario : funcionarios) {
+            if (dadosFuncionario[3].equals(funcionario.getNome())) {
+                num = cont;
+                validarExclusao = true;
+            }
+            cont++;
+        }
+
+        //excluindo cliente, alterando os dados
+        funcionarios.remove(num);
+
+        //adicionondo os novos dados
+        funcionarios.add(new Funcionario(dadosFuncionario[0] + "", dadosFuncionario[1] + "",
+                dadosFuncionario[2] + "", dadosFuncionario[3] + "", dadosFuncionario[4] + ""));
+        return validarExclusao;
+    }
+
+    public boolean excluirFuncionario(String dadosFuncionario) {
+        int cont = 0, num = 0;
+        boolean validarExclusao = false;
+        for (Funcionario funcionario : funcionarios) {
+            if (dadosFuncionario.equals(funcionario.getNome())) {
+                num = cont;
+                validarExclusao = true;
+            }
+            cont++;
+        }
+        if (validarExclusao) {
+            return exclusaoFuncionario(num);
+        } else {
+            return false;
+        }
+    }
+
+    public static boolean cadastrarFuncionario(String [] cadastrarFuncionario){
+        funcionarios.add(new Funcionario(cadastrarFuncionario[0]+"",cadastrarFuncionario[1]+"",
+                cadastrarFuncionario[2]+"",cadastrarFuncionario[3]+"", cadastrarFuncionario[4]+""));
+        return true;
+    }
+
+    public boolean exclusaoFuncionario(int num) {
+        funcionarios.remove(num);
+        return true;
+    }
 }

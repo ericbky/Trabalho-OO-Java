@@ -5,6 +5,7 @@ import sistema.DadosCliente;
 import sistema.DadosFuncionario;
 import sistema.DadosPedido;
 import view.Tela_ListarClientes;
+import view.Tela_MenuAdm;
 import view.Tela_MenuFuncionario;
 
 import javax.swing.*;
@@ -39,7 +40,7 @@ public class LoginController {
     }
 
     public void abrirTelaAdm() throws ParseException {
-        Tela_ListarClientes tela_adm = new Tela_ListarClientes();
+        Tela_MenuAdm tela_adm = new Tela_MenuAdm();
     }
 
     public void abrirTelaFuncionario(){

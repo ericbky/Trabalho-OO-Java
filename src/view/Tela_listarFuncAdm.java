@@ -7,25 +7,22 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.ParseException;
 
-public class Tela_listarFuncionarios extends JFrame {
+public class Tela_listarFuncAdm extends JFrame {
     private JButton sairBtn;
     private JLabel tituloFuncionario;
     private JLabel txtOpcao1;
-    private JLabel txtOpcao2;
     private JButton cadastroBtn;
     private JButton escolherButton;
     private JComboBox boxEscolhaFunc;
-    private JLabel tituloMenu;
     private JPanel Tela_listarFuncionario;
 
-    public Tela_listarFuncionarios() throws ParseException {
+    public Tela_listarFuncAdm() throws ParseException {
         setContentPane(Tela_listarFuncionario);
         setTitle("Funcionário");
         setSize(700, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setLocationRelativeTo(null);
-        FuncionarioController funcionarioController = new FuncionarioController();
 
         chamarComboBox();
 
@@ -34,7 +31,7 @@ public class Tela_listarFuncionarios extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 setContentPane(Tela_listarFuncionario);
                 setVisible(false);
-                funcionarioController.abrirTelaMenuFuncionario();
+                Tela_MenuAdm tela_adm = new Tela_MenuAdm();
             }
         });
 
@@ -46,10 +43,10 @@ public class Tela_listarFuncionarios extends JFrame {
                 funcionario = boxEscolhaFunc.getSelectedItem() + "";
                 //Fechando a tela da listagem de funcionários, chamando a tela de
                 // exibir o funcionario e passando como parâmetro o funcionario selecionado
-                setContentPane(Tela_listarFuncionario);
-                setVisible(false);
-                Tela_exibirFuncionario tela_exibirFuncionario = new Tela_exibirFuncionario();
                 try {
+                    setContentPane(Tela_listarFuncionario);
+                    setVisible(false);
+                    Tela_exibirFuncionario tela_exibirFuncionario = new Tela_exibirFuncionario();
                     tela_exibirFuncionario.exibirFuncionario(funcionario);
                 } catch (ParseException ex) {
                     throw new RuntimeException(ex);
@@ -61,7 +58,12 @@ public class Tela_listarFuncionarios extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 setContentPane(Tela_listarFuncionario);
                 setVisible(false);
-
+            }
+        });
+        cadastroBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Tela_CadastrarFuncionarioAdm tela_cadastrarFuncionarioAdm = new Tela_CadastrarFuncionarioAdm();
             }
         });
     }

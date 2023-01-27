@@ -20,7 +20,6 @@ public class DadosCliente {
     }
 
     public static boolean cadastrarCliente(String[] cadastrarCliente) throws ParseException {
-        int cont = 0;
         clientes.add(new Cliente(cadastrarCliente[0] + "", cadastrarCliente[1] + "",
                 cadastrarCliente[2] + "", cadastrarCliente[3] + "", cadastrarCliente[4] + "",
                 cadastrarCliente[5] + "", cadastrarCliente[6] + ""));
@@ -89,7 +88,7 @@ public class DadosCliente {
         boolean validarExclusao = false;
         //Buncando os clientes na lista, removendo e adicionando os novos dados
         for (Cliente cliente : clientes) {
-            if (dadosCliente.equals(cliente.getCnpj())) {
+            if (dadosCliente[0].equals(cliente.getCnpj())) {
                 num = cont;
             }
             cont++;

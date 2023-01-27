@@ -40,7 +40,7 @@ ClienteController clienteController = new ClienteController();
                 }
                 setContentPane(tela_ListarClientes);
                 setVisible(false);
-                administradorController.abrirTelaLogin();
+                Tela_MenuAdm tela_adm = new Tela_MenuAdm();
             }
         });
         escolherButton.addActionListener(new ActionListener() {

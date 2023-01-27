@@ -95,6 +95,7 @@
         <properties>
           <background color="-14474461"/>
           <editable value="false"/>
+          <enabled value="true"/>
           <font name="Humnst777 Blk BT" size="15" style="1"/>
           <foreground color="-1"/>
           <model/>

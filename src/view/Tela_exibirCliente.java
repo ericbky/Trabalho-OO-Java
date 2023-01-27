@@ -35,7 +35,7 @@ public class Tela_exibirCliente extends JFrame {
 
     public void exibirCliente(String cliente) throws ParseException {
 
-        String vCliente[] = new String[9];
+        String[] vCliente;
         vCliente = clienteController.exibirCliente(cliente);
 
         text_cnpj.setText(vCliente[0]);
@@ -45,39 +45,31 @@ public class Tela_exibirCliente extends JFrame {
         text_razao_social.setText(vCliente[4]);
         text_inicio_contrato.setText(vCliente[5]);
         text_fim_contrato.setText(vCliente[6]);
-        voltarButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                setContentPane(Tela_Cliente);
-                setVisible(false);
-                try {
-                    clienteController.abrirTelaAdm();
-                } catch (ParseException ex) {
-                    throw new RuntimeException(ex);
-                }
+
+        voltarButton.addActionListener(e -> {
+            setContentPane(Tela_Cliente);
+            setVisible(false);
+            try {
+                clienteController.abrirTelaAdm();
+            } catch (ParseException ex) {
+                throw new RuntimeException(ex);
             }
         });
-        editarClienteButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                setContentPane(Tela_Cliente);
-                setVisible(false);
-                Tela_ClienteEdit tela_clienteEdit = new Tela_ClienteEdit();
-                try {
-                    tela_clienteEdit.exibirClienteEdicao(cliente);
-                } catch (ParseException ex) {
-                    throw new RuntimeException(ex);
-                }
+        editarClienteButton.addActionListener(e -> {
+            setContentPane(Tela_Cliente);
+            setVisible(false);
+            Tela_ClienteEdit tela_clienteEdit = new Tela_ClienteEdit();
+            try {
+                tela_clienteEdit.exibirClienteEdicao(cliente);
+            } catch (ParseException ex) {
+                throw new RuntimeException(ex);
             }
         });
-        excluirCliente.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-                    excluirClientes(cliente);
-                } catch (ParseException ex) {
-                    throw new RuntimeException(ex);
-                }
+        excluirCliente.addActionListener(e -> {
+            try {
+                excluirClientes(cliente);
+            } catch (ParseException ex) {
+                throw new RuntimeException(ex);
             }
         });
     }

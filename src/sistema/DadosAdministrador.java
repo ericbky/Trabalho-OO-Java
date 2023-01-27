@@ -12,9 +12,9 @@ public class DadosAdministrador {
     public static void DadosPreCadastradosAdministrador(String email, String senha, String telefone, String nome) {
         //Cadastrando Pedidos
 
-        administradores.add(new Administrador("admin123", "admin123", "546546546", "Em processo"));
-        administradores.add(new Administrador("admin1", "admin1", "64555555555", "Concluído"));
-        administradores.add(new Administrador("admin", "admin", "4564654645", "Agendado"));
+        administradores.add(new Administrador("admin123", "admin123", "546546546", "James"));
+        administradores.add(new Administrador("admin1", "admin1", "64555555555", "Curry"));
+        administradores.add(new Administrador("admin", "admin", "4564654645", "Webert"));
 
     }
 
@@ -30,14 +30,46 @@ public class DadosAdministrador {
         return validador;
     }
 
-    static public boolean pesquisarAdministrador(String nome) {
-        boolean validador = false;
+    public static String[] adm1() {
+        Administrador dadosAdm;
+        String[] dados = new String[4];
+
 
         for (Administrador administrador : administradores) {
-            if (nome.equalsIgnoreCase(administrador.getNome())) {
-                validador = true;
-            }
+            if (administrador.getEmail().equalsIgnoreCase("admin"))
+                dados[0] = administrador.getNome();
+            dados[1] = administrador.getEmail();
+            dados[2] = administrador.getTelefone();
+            dados[3] = administrador.getSenha();
         }
-        return validador;
+        return dados;
+    }
+
+    public static String[] adm2() {
+        Administrador dadosAdm;
+        String[] dados = new String[4];
+
+        for (Administrador administrador : administradores) {
+            if (administrador.getEmail().equalsIgnoreCase("admin1"))
+                dados[0] = administrador.getNome();
+            dados[1] = administrador.getEmail();
+            dados[2] = administrador.getTelefone();
+            dados[3] = administrador.getSenha();
+        }
+        return dados;
+    }
+
+    public static String[] adm3() {
+        Administrador dadosAdm;
+        String[] dados = new String[4];
+
+        for (Administrador administrador : administradores) {
+            if (administrador.getEmail().equalsIgnoreCase("admin123"))
+                dados[0] = administrador.getNome();
+            dados[1] = administrador.getEmail();
+            dados[2] = administrador.getTelefone();
+            dados[3] = administrador.getSenha();
+        }
+        return dados;
     }
 }

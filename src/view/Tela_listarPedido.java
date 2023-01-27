@@ -7,21 +7,21 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.ParseException;
 
-public class Tela_Pedido extends JFrame {
+public class Tela_listarPedido extends JFrame {
     private JButton sairBtn;
     private JLabel tituloFuncionario;
     private JLabel txtOpcao1;
     private JLabel txtOpcao2;
     private JButton cadastroBtn;
     private JButton escolherButton;
-    private JComboBox boxEscolhaPed;
+    private JComboBox<String> boxEscolhaPed;
     private JLabel tituloMenu;
-    private JPanel Tela_PedidoAdm;
+    private JPanel Tela_listarPedido;
 
     PedidoController pedidoController = new PedidoController();
 
-    public Tela_Pedido() throws ParseException {
-        setContentPane(Tela_PedidoAdm);
+    public Tela_listarPedido() throws ParseException {
+        setContentPane(Tela_listarPedido);
         setTitle("Funcionário");
         setSize(700, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -33,7 +33,7 @@ public class Tela_Pedido extends JFrame {
         sairBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                setContentPane(Tela_PedidoAdm);
+                setContentPane(Tela_listarPedido);
                 setVisible(false);
                 Tela_MenuFuncionario tela_funcionario = new Tela_MenuFuncionario();
             }
@@ -45,19 +45,26 @@ public class Tela_Pedido extends JFrame {
                 String pedido;
                 pedido = boxEscolhaPed.getSelectedItem() + "";
                 //Fechando a tela ADM, chamando a tela de exibir cliente e passando como parâmetro o cliente
-                setContentPane(Tela_PedidoAdm);
+                setContentPane(Tela_listarPedido);
                 setVisible(false);
                 Tela_exibirPedido tela_exibirPedido = new Tela_exibirPedido();
 
                 tela_exibirPedido.exibirPedido(pedido);
-                //tela.exibirCliente(cliente);
             }
         });
 
+        cadastroBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setContentPane(Tela_listarPedido);
+                setVisible(false);
+
+            }
+        });
     }
 
     public void chamarComboBox() throws ParseException {
-        String numeroSerie[];
+        String[] numeroSerie;
         int tamanhoPedidos;
         int cont;
 

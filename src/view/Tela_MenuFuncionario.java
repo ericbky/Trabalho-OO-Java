@@ -31,7 +31,8 @@ public class Tela_MenuFuncionario extends JFrame {
                 setContentPane(Tela_Funcionario);
                 setVisible(false);
                 try {
-                    Tela_listarFuncionarios tela_funcionarioAdm = new Tela_listarFuncionarios();
+                    Tela_listarFuncFuncionario tela_listarFuncFuncionario = new Tela_listarFuncFuncionario();
+
                 } catch (ParseException ex) {
                     throw new RuntimeException(ex);
                 }
@@ -43,7 +44,7 @@ public class Tela_MenuFuncionario extends JFrame {
                 setContentPane(Tela_Funcionario);
                 setVisible(false);
                 try {
-                    Tela_Pedido tela_pedido = new Tela_Pedido();
+                    Tela_listarPedido tela_pedido = new Tela_listarPedido();
                 } catch (ParseException ex) {
                     throw new RuntimeException(ex);
                 }

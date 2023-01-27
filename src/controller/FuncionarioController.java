@@ -1,13 +1,13 @@
 package controller;
 
-import model.*;
 import sistema.DadosFuncionario;
 import view.Tela_MenuFuncionario;
 
 import java.text.ParseException;
-import java.util.*;
 
 public class FuncionarioController {
+
+    DadosFuncionario dadosFuncionario = new DadosFuncionario();
 
     public String[] exibirFuncionariosCB() throws ParseException {
         return DadosFuncionario.comboFuncionarios();
@@ -18,8 +18,21 @@ public class FuncionarioController {
         return DadosFuncionario.exibirFuncionario(funcionario);
     }
 
+    public boolean editarFuncionario(String [] funcionario){
+
+        return dadosFuncionario.editarDadosFuncionario(funcionario);
+    }
+
     public int tamanhoFuncionarios(){
         return DadosFuncionario.tamanhoFuncionarios();
+    }
+
+    public boolean excluirFuncionario(String funcionario){
+        return dadosFuncionario.excluirFuncionario(funcionario);
+    }
+
+    public boolean cadastrarFuncionario(String [] dadosFuncionario){
+        return  DadosFuncionario.cadastrarFuncionario(dadosFuncionario);
     }
 
     public static void cadastrarPedido() {
