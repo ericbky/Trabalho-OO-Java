@@ -50,10 +50,12 @@ public class Tela_exibirPedido extends JFrame {
                 throw new RuntimeException(ex);
             }
         });
+
         editarPedidoButton.addActionListener(e -> {
             setContentPane(Tela_MostrarPedidoAdm);
             setVisible(false);
         });
+
         excluirPedidoButton.addActionListener(e -> {
             JOptionPane.showMessageDialog(null, "Pedido excluído com sucesso!");
             setContentPane(Tela_MostrarPedidoAdm);

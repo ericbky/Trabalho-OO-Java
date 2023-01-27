@@ -98,9 +98,20 @@ public class DadosCliente {
         clientes.remove(num);
 
         //adicionondo os novos dados
-        clientes.add(new Cliente(dadosCliente[1]+"",dadosCliente[2]+"",
-                dadosCliente[0]+"", dadosCliente[4]+"", dadosCliente[3]+"",
-                dadosCliente[5]+"", dadosCliente[6]+""));
+        clientes.add(new Cliente(dadosCliente[1] + "", dadosCliente[2] + "",
+                dadosCliente[0] + "", dadosCliente[4] + "", dadosCliente[3] + "",
+                dadosCliente[5] + "", dadosCliente[6] + ""));
         return true;
+    }
+
+    public static boolean procurarCliente(String cnpjCliente) {
+        boolean validador = false;
+
+        for (Cliente cliente : clientes) {
+            if (cnpjCliente.equalsIgnoreCase(cliente.getCnpj())) {
+                validador = true;
+            }
+        }
+        return validador;
     }
 }

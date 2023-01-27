@@ -58,7 +58,7 @@ public class Tela_listarPedido extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 setContentPane(Tela_listarPedido);
                 setVisible(false);
-
+                Tela_CadastrarPedido tela_cadastrarPedido = new Tela_CadastrarPedido();
             }
         });
     }

@@ -21,7 +21,8 @@ public class DadosPedido {
         pedidos.add(new Pedido("105220434", "25/02/2023", 253,
                 "Agendado", "Centrifugação", "725.874.758/0001-80"));
 
-}
+    }
+
     public static int tamanhoPedidos() {
         return pedidos.size();
     }
@@ -38,7 +39,7 @@ public class DadosPedido {
         return vPedidos;
     }
 
-    public static String[] exibirDadosPedido(String numPedido){
+    public static String[] exibirDadosPedido(String numPedido) {
 
         String[] vPedidos = new String[100];
         String numSerie;
@@ -51,11 +52,12 @@ public class DadosPedido {
                 vPedidos[2] = String.valueOf(pedido.getQuantidadeRoupa());
                 vPedidos[3] = pedido.getStatus();
                 vPedidos[4] = pedido.getTipoLavagem();
-            }}
+            }
+        }
         return vPedidos;
     }
 
-    public static boolean excluirPedido(String pedidoEx){
+    public static boolean excluirPedido(String pedidoEx) {
         int cont = 0, num = 0;
         boolean validarExclusao = false;
         for (Pedido pedido : pedidos) {
@@ -71,8 +73,16 @@ public class DadosPedido {
             return false;
         }
     }
+
     private static boolean exclusaoPedido(int num) {
         pedidos.remove(num);
+        return true;
+    }
+
+    public static boolean cadastrarPedido(String[] cadastrarPedido, int num) {
+
+        pedidos.add(new Pedido(cadastrarPedido[0] + "", cadastrarPedido[1] + "",num, cadastrarPedido[3] + "",
+                cadastrarPedido[4] + "", cadastrarPedido[5] + ""));
         return true;
     }
 }

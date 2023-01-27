@@ -22,4 +22,12 @@ public class PedidoController {
         return DadosPedido.excluirPedido(pedidoEx);
     }
 
+    public boolean cadastrarPedido (String [] dadosPedidoCad, int num){
+        return DadosPedido.cadastrarPedido(dadosPedidoCad, num);
+    }
+
+    public boolean procurarCliente(String cnpjCliente){
+        return DadosCliente.procurarCliente(cnpjCliente);
+    }
+
 }

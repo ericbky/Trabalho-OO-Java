@@ -40,7 +40,7 @@ public class Tela_ClienteCad extends JFrame {
                 dadosClienteCad[0] = text_cnpj.getText();
                 dadosClienteCad[1] = text_email.getText();
                 dadosClienteCad[2] = text_endereco.getText();
-                dadosClienteCad[3] = text_email.getText();
+                dadosClienteCad[3] = text_telefone.getText();
                 dadosClienteCad[4] = text_razao_social.getText();
                 dadosClienteCad[5] = text_inicio_contrato.getText();
                 dadosClienteCad[6] = text_fim_contrato.getText();
@@ -55,7 +55,7 @@ public class Tela_ClienteCad extends JFrame {
                 } else {
                     try {
                         if (clienteController.cadastrarCliente(dadosClienteCad)) {
-                            JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso!!");
+                            JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso!");
                             setContentPane(Tela_ClienteCad);
                             setVisible(false);
                             Tela_ListarClientes tela_adm = new Tela_ListarClientes();
