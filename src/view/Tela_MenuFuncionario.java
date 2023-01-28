@@ -8,17 +8,18 @@ import java.awt.event.ActionListener;
 import java.text.ParseException;
 
 public class Tela_MenuFuncionario extends JFrame {
-    private JLabel tituloView;
     private JButton pedidoBTN;
     private JTextField nomeFunc;
     private JPanel Tela_Funcionario;
     private JButton listarFuncBTN;
     private JButton sairButton;
+    private JTextField menuTextField;
 
     public Tela_MenuFuncionario() {
+        this.setIconImage (new javax.swing.ImageIcon(getClass().getResource("/view/Ícones/botao-de-menu.png")).getImage());
         setContentPane(Tela_Funcionario);
         setTitle("Funcionário");
-        setSize(500, 450);
+        setSize(450, 450);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setLocationRelativeTo(null);

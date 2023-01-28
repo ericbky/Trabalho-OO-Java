@@ -4,8 +4,7 @@ import controller.ClienteController;
 import controller.PedidoController;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.text.ParseException;
 
 public class Tela_CadastrarPedido extends JFrame {
@@ -23,9 +22,10 @@ public class Tela_CadastrarPedido extends JFrame {
     private JTextField text_cnpjCliente;
 
     public Tela_CadastrarPedido() throws ParseException {
+        this.setIconImage (new javax.swing.ImageIcon(getClass().getResource("/view/Ícones/pedido.png")).getImage());
         setContentPane(Tela_CadastrarPedido);
-        setTitle("Funcionário");
-        setSize(700, 600);
+        setTitle("Cadastro de Pedido");
+        setSize(600, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setLocationRelativeTo(null);
