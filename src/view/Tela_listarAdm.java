@@ -22,12 +22,13 @@ public class Tela_listarAdm extends javax.swing.JFrame {
     private JTextField nome_adm2;
     private JTextField nome_adm3;
     private JLabel Icone_adm;
+    private JLabel nome_text;
 
     public Tela_listarAdm() {
         this.setIconImage(new javax.swing.ImageIcon(getClass().getResource("/view/Ícones/adm.png")).getImage());
         setContentPane(Adms);
         setTitle("Administradores");
-        setSize(650, 450);
+        setSize(740, 450);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setLocationRelativeTo(null);
@@ -61,9 +62,5 @@ public class Tela_listarAdm extends javax.swing.JFrame {
         senha_adm3.setText(vAdm3[1]);
         telefone_adm3.setText(vAdm3[2]);
         nome_adm3.setText(vAdm3[3]);
-    }
-
-    public static void main(String[] args) {
-        Tela_listarAdm tela_listar_adm = new Tela_listarAdm();
     }
 }
