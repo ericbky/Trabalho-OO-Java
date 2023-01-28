@@ -26,6 +26,8 @@ public class Tela_MenuAdm extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
+                    setContentPane(Tela_MenuAdm);
+                    setVisible(false);
                     Tela_ListarClientes tela_adm = new Tela_ListarClientes();
                 } catch (ParseException ex) {
                     throw new RuntimeException(ex);
@@ -35,6 +37,8 @@ public class Tela_MenuAdm extends JFrame {
         administradoresButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                setContentPane(Tela_MenuAdm);
+                setVisible(false);
                 Tela_listarAdm tela_listarAdm = new Tela_listarAdm();
             }
         });

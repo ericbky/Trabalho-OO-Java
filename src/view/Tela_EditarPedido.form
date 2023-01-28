@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.Tela_CadastrarPedido">
-  <grid id="27dc6" binding="Tela_CadastrarPedido" layout-manager="GridLayoutManager" row-count="9" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.Tela_EditarPedido">
+  <grid id="27dc6" binding="Tela_EditarPedido" layout-manager="GridLayoutManager" row-count="9" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="637" height="400"/>
+      <xy x="20" y="20" width="607" height="400"/>
     </constraints>
     <properties>
       <background color="-2500135"/>
@@ -17,7 +17,7 @@
         <properties>
           <font size="20" style="3"/>
           <foreground color="-16777216"/>
-          <text value="              Cadastrar Pedido"/>
+          <text value="               Pedido"/>
         </properties>
       </component>
       <hspacer id="6a141">
@@ -55,10 +55,10 @@
         <properties>
           <font size="16" style="1"/>
           <foreground color="-16777216"/>
-          <text value="Número de Série:"/>
+          <text value="Número de série:"/>
         </properties>
       </component>
-      <component id="2308b" class="javax.swing.JTextField" binding="text_numero">
+      <component id="2308b" class="javax.swing.JTextField" binding="text_numS">
         <constraints>
           <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -66,6 +66,7 @@
         </constraints>
         <properties>
           <background color="-15326627"/>
+          <editable value="false"/>
           <foreground color="-1"/>
           <text value=""/>
         </properties>
@@ -77,10 +78,10 @@
         <properties>
           <font size="16" style="1"/>
           <foreground color="-16777216"/>
-          <text value="Data do Pedido:"/>
+          <text value="Data do pedido:"/>
         </properties>
       </component>
-      <component id="ee8cd" class="javax.swing.JTextField" binding="text_dataPedido">
+      <component id="ee8cd" class="javax.swing.JTextField" binding="text_data">
         <constraints>
           <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -146,7 +147,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="b17e8" class="javax.swing.JTextField" binding="text_tipoLavagem">
+      <component id="b17e8" class="javax.swing.JTextField" binding="text_tipo">
         <constraints>
           <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -173,19 +174,26 @@
           <text value="CNPJ do Cliente"/>
         </properties>
       </component>
-      <component id="4e58" class="javax.swing.JButton" binding="cadastrarPedidoButton" default-binding="true">
+      <component id="98715" class="javax.swing.JTextField" binding="text_cnpj">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-15326627"/>
+          <editable value="false"/>
+          <foreground color="-1"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="61427" class="javax.swing.JButton" binding="editarPedidoButton" default-binding="true">
         <constraints>
           <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Cadastrar Pedido"/>
+          <text value="Editar pedido"/>
         </properties>
-      </component>
-      <component id="a9c6a" class="javax.swing.JComboBox" binding="comboBoxCliente">
-        <constraints>
-          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties/>
       </component>
     </children>
   </grid>

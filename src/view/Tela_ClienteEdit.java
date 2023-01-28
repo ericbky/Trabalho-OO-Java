@@ -34,7 +34,11 @@ public class Tela_ClienteEdit extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 setContentPane(Tela_Cliente);
                 setVisible(false);
-                Tela_exibirCliente tela_cliente = new Tela_exibirCliente();
+                try {
+                    Tela_ListarClientes tela_listarClientes = new Tela_ListarClientes();
+                } catch (ParseException ex) {
+                    throw new RuntimeException(ex);
+                }
             }
         });
 

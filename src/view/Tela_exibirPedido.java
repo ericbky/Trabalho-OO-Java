@@ -17,6 +17,8 @@ public class Tela_exibirPedido extends JFrame {
     private JTextField text_tLavagem;
     private JButton editarPedidoButton;
     private JButton excluirPedidoButton;
+    private JTextField text_cnpj;
+    private JLabel text_cnp;
 
     public Tela_exibirPedido() {
         setContentPane(Tela_MostrarPedidoAdm);
@@ -40,6 +42,7 @@ public class Tela_exibirPedido extends JFrame {
         text_qntRoupa.setText(vPedido[2]);
         text_Status.setText(vPedido[3]);
         text_tLavagem.setText(vPedido[4]);
+        text_cnpj.setText(vPedido[5]);
 
         voltarBtn.addActionListener(e -> {
             setContentPane(Tela_MostrarPedidoAdm);
@@ -54,6 +57,8 @@ public class Tela_exibirPedido extends JFrame {
         editarPedidoButton.addActionListener(e -> {
             setContentPane(Tela_MostrarPedidoAdm);
             setVisible(false);
+            Tela_EditarPedido tela_editarPedido = new Tela_EditarPedido();
+            tela_editarPedido.exibirPedido(pedido);
         });
 
         excluirPedidoButton.addActionListener(e -> {
