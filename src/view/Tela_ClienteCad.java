@@ -4,11 +4,10 @@ import javax.swing.*;
 
 import controller.*;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.text.ParseException;
 
-public class Tela_ClienteCad extends JFrame {
+public class Tela_ClienteCad extends javax.swing.JFrame {
     private JTextField text_cnpj;
     private JTextField text_email;
     private JTextField text_telefone;
@@ -22,9 +21,10 @@ public class Tela_ClienteCad extends JFrame {
     private JTextField text_endereco;
 
     public Tela_ClienteCad() {
+        this.setIconImage(new javax.swing.ImageIcon(getClass().getResource("/view/Ícones/Dados_Cliente_pequeno.png")).getImage());
         setContentPane(Tela_ClienteCad);
         setTitle("Cliente");
-        setSize(700, 685);
+        setSize(600, 685);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setLocationRelativeTo(null);
@@ -80,7 +80,6 @@ public class Tela_ClienteCad extends JFrame {
             }
         });
     }
-
 }
 
 
