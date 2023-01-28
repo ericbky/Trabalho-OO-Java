@@ -4,13 +4,13 @@ public class Pedido {
 
     private String numeroSerie;
     private String dataPedido;
-    private int quantidadeRoupa;
+    private String quantidadeRoupa;
     private String status;
     private String tipoLavagem;
     private String cnpjCliente;
 
     //CONSTRUTOR
-    public Pedido(String numeroSerie, String dataPedido, int quantidadeRoupa, String status, String tipoLavagem, String cnpjCliente) {
+    public Pedido(String numeroSerie, String dataPedido, String quantidadeRoupa, String status, String tipoLavagem, String cnpjCliente) {
         this.numeroSerie = numeroSerie;
         this.dataPedido = dataPedido;
         this.quantidadeRoupa = quantidadeRoupa;
@@ -36,11 +36,11 @@ public class Pedido {
         this.dataPedido = dataPedido;
     }
 
-    public int getQuantidadeRoupa() {
+    public String getQuantidadeRoupa() {
         return quantidadeRoupa;
     }
 
-    public void setQuantidadeRoupa(int quantidadeRoupa) {
+    public void setQuantidadeRoupa(String quantidadeRoupa) {
         this.quantidadeRoupa = quantidadeRoupa;
     }
 

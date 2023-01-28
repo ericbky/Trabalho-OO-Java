@@ -3,11 +3,10 @@ package view;
 import controller.FuncionarioController;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.text.ParseException;
 
-public class Tela_CadastrarFuncionarioAdm extends JFrame {
+public class Tela_CadastrarFuncionarioAdm extends javax.swing.JFrame {
 
     private JPanel Tela_CadastrarFuncionarioAdm;
     private JButton voltarBtn;
@@ -20,9 +19,10 @@ public class Tela_CadastrarFuncionarioAdm extends JFrame {
     private JButton cadastroBtn;
 
     public Tela_CadastrarFuncionarioAdm() {
+        this.setIconImage (new javax.swing.ImageIcon(getClass().getResource("/view/Ícones/adicionar-usuario.png")).getImage());
         setContentPane(Tela_CadastrarFuncionarioAdm);
         setTitle("Cadastro de Funcionário");
-        setSize(700, 600);
+        setSize(550, 610);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setLocationRelativeTo(null);

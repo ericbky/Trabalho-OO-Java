@@ -37,6 +37,17 @@ public class DadosCliente {
         return vClientes;
     }
 
+    static public String[] comboCnpjClientes() throws ParseException {
+        String[] vClientes = new String[100];
+        int cont = 0;
+
+        for (Cliente cliente : clientes) {
+            vClientes[cont] = cliente.getCnpj();
+            cont++;
+        }
+        return vClientes;
+    }
+
     public static int tamanhoClientes() {
         return clientes.size();
     }

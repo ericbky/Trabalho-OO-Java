@@ -1,10 +1,10 @@
 package view;
 
+import controller.ClienteController;
 import controller.PedidoController;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.text.ParseException;
 
 public class Tela_CadastrarPedido extends JFrame {
@@ -18,15 +18,20 @@ public class Tela_CadastrarPedido extends JFrame {
     private JTextField text_status;
     private JTextField text_tipoLavagem;
     private JButton cadastrarPedidoButton;
+    private JComboBox<String> comboBoxCliente;
     private JTextField text_cnpjCliente;
 
-    public Tela_CadastrarPedido() {
+    public Tela_CadastrarPedido() throws ParseException {
+        this.setIconImage (new javax.swing.ImageIcon(getClass().getResource("/view/Ícones/pedido.png")).getImage());
         setContentPane(Tela_CadastrarPedido);
-        setTitle("Funcionário");
-        setSize(700, 600);
+        setTitle("Cadastro de Pedido");
+        setSize(600, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setLocationRelativeTo(null);
+
+        chamarComboBoxCliente();
+
         voltarBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -49,20 +54,17 @@ public class Tela_CadastrarPedido extends JFrame {
 
                 dadosPedidoCad[0] = text_numero.getText();
                 dadosPedidoCad[1] = text_dataPedido.getText();
-                qnt = Integer.parseInt(text_qntRoupa.getText());
-                dadosPedidoCad[2] = text_status.getText();
-                dadosPedidoCad[3] = text_tipoLavagem.getText();
-                dadosPedidoCad[4] = text_cnpjCliente.getText();
+                dadosPedidoCad[2] = text_qntRoupa.getText();
+                dadosPedidoCad[3] = text_status.getText();
+                dadosPedidoCad[4] = text_tipoLavagem.getText();
+                dadosPedidoCad[5] = comboBoxCliente.getSelectedItem() + "";
 
-                if ((dadosPedidoCad[0].length() < 6) ||
-                        (dadosPedidoCad[2].length() < 10) ||
-                        (dadosPedidoCad[3].length() < 10) ||
-                        (qnt < 2) ||
-                        (dadosPedidoCad[4].length() < 3) ) {
+
+                if (dadosPedidoCad[4].length() < 3 || (dadosPedidoCad[0].length() < 6) || (dadosPedidoCad[2].length() < 5)
+                        || (dadosPedidoCad[3].length()) < 5 || (dadosPedidoCad[4].length() < 5) || (dadosPedidoCad[5].length() < 5)) {
                     JOptionPane.showMessageDialog(null, "Digite dados válidos!");
                 } else {
-                    if(pedidoController.procurarCliente(dadosPedidoCad[4])){
-                    if (pedidoController.cadastrarPedido(dadosPedidoCad, qnt)) {
+                    if (pedidoController.cadastrarPedido(dadosPedidoCad)) {
                         JOptionPane.showMessageDialog(null, "Pedido cadastrado com sucesso!");
                         setContentPane(Tela_CadastrarPedido);
                         setVisible(false);
@@ -71,11 +73,28 @@ public class Tela_CadastrarPedido extends JFrame {
                         } catch (ParseException ex) {
                             throw new RuntimeException(ex);
                         }
-                    }}
+                    }
                 }
             }
         });
     }
 
+    public void chamarComboBoxCliente() throws ParseException {
 
+        ClienteController clienteController = new ClienteController();
+        String razaoClientes[] = new String[100];
+        int tamanhoClientes;
+        int cont;
+
+        //Pegando as razões sociais do banco de dados
+        razaoClientes = clienteController.exibirCnpjClientes();
+        //Vendo quantos clientes tem cadastrados para colocar no laço de repetição
+        tamanhoClientes = clienteController.tamanhoClientes();
+
+        //Listando
+        for (cont = 0; cont < tamanhoClientes; cont++) {
+            comboBoxCliente.addItem(razaoClientes[cont]);
+        }
+
+    }
 }

@@ -4,10 +4,9 @@ import controller.AdministradorController;
 import controller.FuncionarioController;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
-public class Tela_listarAdm extends JFrame {
+public class Tela_listarAdm extends javax.swing.JFrame {
     private JPanel Adms;
     private JTextField telefone_adm1;
     private JTextField email_adm1;
@@ -22,11 +21,14 @@ public class Tela_listarAdm extends JFrame {
     private JTextField telefone_adm2;
     private JTextField nome_adm2;
     private JTextField nome_adm3;
+    private JLabel Icone_adm;
+    private JLabel nome_text;
 
     public Tela_listarAdm() {
+        this.setIconImage(new javax.swing.ImageIcon(getClass().getResource("/view/Ícones/adm.png")).getImage());
         setContentPane(Adms);
         setTitle("Administradores");
-        setSize(650, 450);
+        setSize(740, 450);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setLocationRelativeTo(null);
@@ -61,5 +63,4 @@ public class Tela_listarAdm extends JFrame {
         telefone_adm3.setText(vAdm3[2]);
         nome_adm3.setText(vAdm3[3]);
     }
-
 }

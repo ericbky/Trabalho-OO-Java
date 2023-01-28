@@ -35,22 +35,8 @@ public class FuncionarioController {
         return  DadosFuncionario.cadastrarFuncionario(dadosFuncionario);
     }
 
-    public static void cadastrarPedido() {
-    }
-
     public void abrirTelaMenuFuncionario(){
         Tela_MenuFuncionario tela_menuFuncionario = new Tela_MenuFuncionario();
     }
 
-    public static void editarPedido() {
-
-    }
-
-    public static void listarPedido() {
-
-    }
-
-    public static void excluirPedido() {
-
-    }
 }

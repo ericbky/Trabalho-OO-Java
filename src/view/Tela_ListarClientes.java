@@ -85,9 +85,9 @@ ClienteController clienteController = new ClienteController();
         int cont;
 
         //Pegando as razões sociais do banco de dados
-        razaoClientes = administradorController.exibirClientes();
+        razaoClientes = clienteController.exibirClientes();
         //Vendo quantos clientes tem cadastrados para colocar no laço de repetição
-        tamanhoClientes = administradorController.tamanhoClientes();
+        tamanhoClientes = clienteController.tamanhoClientes();
 
         //Listando
         for (cont = 0; cont < tamanhoClientes; cont++) {
@@ -102,9 +102,9 @@ ClienteController clienteController = new ClienteController();
         int cont;
 
         //Pegando as razões sociais do banco de dados
-        razaoClientes = administradorController.exibirClientes();
+        razaoClientes = clienteController.exibirClientes();
         //Vendo quantos clientes tem cadastrados para colocar no laço de repetição
-        tamanhoClientes = administradorController.tamanhoClientes();
+        tamanhoClientes = clienteController.tamanhoClientes();
 
         //Listando
         for (cont = 0; cont < tamanhoClientes; cont++) {

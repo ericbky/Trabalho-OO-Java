@@ -1,6 +1,7 @@
 package view;
 
 import controller.ClienteController;
+import controller.PedidoController;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -67,15 +68,34 @@ public class Tela_exibirCliente extends JFrame {
         });
         excluirCliente.addActionListener(e -> {
             try {
-                excluirClientes(cliente);
+                excluirClientes(cliente, text_cnpj.getText());
             } catch (ParseException ex) {
                 throw new RuntimeException(ex);
             }
         });
+
+        chamarComboPed(vCliente[0]);
+
     }
 
-    public void excluirClientes(String cliente) throws ParseException {
-        if (clienteController.excluirCliente(cliente)) {
+    public void chamarComboPed(String cnpjCliente) {
+        String[] vPedidos = new String[100];
+        int tamanhoPedidos, cont;
+
+        PedidoController pedidoController = new PedidoController();
+
+        vPedidos = pedidoController.exibirPedCliente(cnpjCliente);
+        tamanhoPedidos = pedidoController.tamanhoPedidoCliente(cnpjCliente);
+        for (cont = 0; cont < tamanhoPedidos; cont++) {
+            listaPedidos.addItem(vPedidos[cont]);
+        }
+
+
+    }
+
+    public void excluirClientes(String cliente, String cnpj) throws ParseException {
+
+        if (clienteController.excluirCliente(cliente, cnpj)) {
             JOptionPane.showMessageDialog(null, "Cliente excluído com sucesso!");
             setContentPane(Tela_Cliente);
             setVisible(false);

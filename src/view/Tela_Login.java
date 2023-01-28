@@ -15,9 +15,10 @@ public class Tela_Login extends JFrame {
     private JPasswordField senhaLogin;
 
     public Tela_Login() {
+        this.setIconImage (new javax.swing.ImageIcon(getClass().getResource("/view/Ícones/lavanderia.png")).getImage());
         setContentPane(TelaLogin);
-        setTitle("Login");
-        setSize(470, 410);
+        setTitle("Sistema de Lavanderia");
+        setSize(425, 425);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setLocationRelativeTo(null);
